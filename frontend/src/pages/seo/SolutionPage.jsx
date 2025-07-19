@@ -219,7 +219,73 @@ const SolutionPage = ({ service, solution }) => {
         </section>
       )}
 
-      {/* Special Section for Robot Tondeuse */}
+      {/* Special Section for Security Financing */}
+      {service === 'securite' && seoPages.securite.financing && (
+        <section className="py-20 bg-blue-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {seoPages.securite.financing.title}
+              </h2>
+              <p className="text-lg text-gray-600">
+                {seoPages.securite.financing.description}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {seoPages.securite.financing.partners.map((partner, index) => (
+                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                  <CardContent className="p-8">
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+                        <ExternalLink className="w-8 h-8 text-blue-600" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900">{partner.name}</h3>
+                        <p className="text-gray-600">{partner.description}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <h4 className="font-semibold text-gray-900">Avantages :</h4>
+                      {partner.advantages.map((advantage, idx) => (
+                        <div key={idx} className="flex items-center space-x-2">
+                          <CheckCircle className="w-4 h-4 text-green-600" />
+                          <span className="text-sm text-gray-700">{advantage}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <Button asChild className="w-full mt-6">
+                      <Link to="/contact">Demander un financement</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Card className="border-0 shadow-md bg-white inline-block">
+                <CardContent className="p-6">
+                  <p className="text-gray-600 mb-4">
+                    <strong>Financement jusqu'à 100%</strong> de votre projet sécurité
+                  </p>
+                  <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
+                    <div className="flex items-center space-x-1">
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <span>Réponse rapide</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <span>Taux préférentiels</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      )}
       {isRobotTondeuse && (
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
