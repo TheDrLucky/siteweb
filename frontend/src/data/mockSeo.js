@@ -98,50 +98,95 @@ export const seoPages = {
       title: "Bureau d'Études Sécurité - Audit & Protection",
       slug: "bureau-etudes-securite",
       description: "Notre bureau d'études sécurité analyse vos besoins et conçoit des solutions de protection sur-mesure pour particuliers et entreprises.",
-      content: "Sécurisez efficacement votre patrimoine..."
+      content: "Sécurisez efficacement votre patrimoine avec nos partenaires officiels : Ajax Systems, Grundig, Cors Online, Securitas Technologie. Financement M2M Finance et Grenke disponible."
     },
     solutions: [
       {
-        title: "Grundig Sécurité - Revendeur Officiel",
-        slug: "grundig-securite",
-        description: "Découvrez Grundig Sécurité, leader européen en systèmes d'alarme. Solutions professionnelles pour particuliers et entreprises. Revendeur officiel Bretagne.",
-        keywords: "Grundig sécurité, alarme Grundig, revendeur officiel, système sécurité professionnel",
-        content: "Grundig Security, fondée en 1945, est un pionnier européen...",
-        products: ["Centrales d'alarme Grundig", "Détecteurs sans fil", "Sirènes extérieures", "Claviers déportés"],
+        title: "Ajax Systems - Alarme Anti-Intrusion",
+        slug: "ajax-systems-alarme",
+        description: "Systèmes d'alarme Ajax Systems sans fil nouvelle génération. Protection périmétrique et volumétrique avec application smartphone avancée.",
+        keywords: "Ajax Systems, alarme sans fil, détecteur mouvement, protection intrusion, sécurité maison",
+        content: "Ajax Systems révolutionne la sécurité domestique avec des détecteurs ultra-performants, une centrale hub intelligent et une application intuitive. Technologie européenne de pointe.",
+        products: ["Hub Ajax", "Détecteurs volumétriques", "Contacts d'ouverture", "Sirènes extérieures", "Télécommandes"],
         company: {
-          name: "Grundig Security",
-          founded: "1945",
-          headquarters: "Allemagne", 
-          speciality: "Systèmes de sécurité électronique",
-          certifications: ["EN 50131", "VdS", "CNPP"],
-          description: "Leader européen en solutions de sécurité électronique depuis plus de 75 ans."
+          name: "Ajax Systems",
+          founded: "2011",
+          headquarters: "Ukraine/Pays-Bas",
+          speciality: "Alarmes sans fil intelligentes",
+          certifications: ["EN 50131", "Grade 2", "Jeweller Radio"],
+          description: "Leader européen en systèmes d'alarme sans fil avec technologie radio exclusive Jeweller."
         }
       },
       {
-        title: "Vidéosurveillance IP",
-        slug: "videosurveillance-ip",
-        description: "Systèmes de vidéosurveillance IP haute définition. Surveillance 24h/24, vision nocturne et accès à distance sécurisé.",
-        keywords: "vidéosurveillance IP, caméra sécurité, surveillance HD, vision nocturne",
-        content: "La vidéosurveillance IP offre une qualité d'image exceptionnelle...",
-        products: ["Caméras 4K", "NVR professionnels", "Vision nocturne", "Détection IA"]
+        title: "Grundig Vidéosurveillance IP", 
+        slug: "grundig-videosurveillance",
+        description: "Systèmes de vidéosurveillance IP Grundig haute définition. Surveillance 24h/24, vision nocturne et accès à distance sécurisé.",
+        keywords: "Grundig vidéosurveillance, caméra IP, surveillance HD, vision nocturne, NVR",
+        content: "La vidéosurveillance Grundig offre une qualité d'image 4K exceptionnelle avec intelligence artificielle intégrée. Détection avancée et alertes smartphone instantanées.",
+        products: ["Caméras 4K Grundig", "NVR professionnels", "Vision nocturne couleur", "Détection IA", "Stockage cloud"],
+        company: {
+          name: "Grundig Security",
+          founded: "1945", 
+          headquarters: "Allemagne",
+          speciality: "Vidéosurveillance et sécurité électronique",
+          certifications: ["VdS", "EN 62676", "NDAA Compliant"],
+          description: "Leader européen en solutions de vidéosurveillance professionnelle depuis plus de 75 ans."
+        }
       },
       {
-        title: "Contrôle d'Accès",
-        slug: "controle-acces",
+        title: "Contrôle d'Accès Professionnel",
+        slug: "controle-acces-professionnel",
         description: "Solutions de contrôle d'accès biométrique et par badge. Sécurisez vos locaux avec traçabilité complète des entrées/sorties.", 
-        keywords: "contrôle accès, badge électronique, biométrie, lecteur empreinte",
-        content: "Le contrôle d'accès moderne combine sécurité et praticité...",
-        products: ["Lecteurs biométriques", "Badges RFID", "Serrures électroniques", "Logiciel de gestion"]
+        keywords: "contrôle accès, badge électronique, biométrie, lecteur empreinte, sécurité entreprise",
+        content: "Le contrôle d'accès moderne combine sécurité maximale et praticité d'usage. Badges, biométrie, codes, smartphone - toutes les technologies disponibles.",
+        products: ["Lecteurs biométriques", "Badges RFID", "Serrures électroniques", "Logiciel de gestion", "Tourniquets"],
+        partners: ["HID Global", "Paxton", "Salto Systems"]
       },
       {
-        title: "Alarme Anti-Intrusion",
-        slug: "alarme-anti-intrusion", 
-        description: "Systèmes d'alarme anti-intrusion sans fil dernière génération. Protection périmétrique et volumétrique avec télésurveillance.",
-        keywords: "alarme anti-intrusion, détecteur mouvement, sirène, télésurveillance",
-        content: "L'alarme anti-intrusion est la première barrière de protection...",
-        products: ["Détecteurs volumétriques", "Contacts d'ouverture", "Sirènes d'alarme", "Transmetteurs GSM"]
+        title: "Télésurveillance Cors Online",
+        slug: "telesurveillance-cors-online",
+        description: "Service de télésurveillance professionnel avec Cors Online. Surveillance 24h/24 par agents certifiés, intervention rapide garantie.",
+        keywords: "télésurveillance, Cors Online, surveillance 24h, intervention, sécurité",
+        content: "Cors Online assure une surveillance professionnelle de vos installations avec intervention rapide et levée de doute systématique. Agrément APSAD.",
+        products: ["Surveillance 24h/24", "Levée de doute vidéo", "Intervention rapide", "Maintenance préventive"],
+        company: {
+          name: "Cors Online", 
+          speciality: "Télésurveillance et intervention",
+          certifications: ["APSAD", "CNAPS"],
+          description: "Société de télésurveillance française avec centres de surveillance agréés APSAD."
+        }
+      },
+      {
+        title: "Securitas Technologie",
+        slug: "securitas-technologie", 
+        description: "Partenariat Securitas Technologie pour solutions sécurité entreprise. Installation, maintenance et télésurveillance intégrées.",
+        keywords: "Securitas, sécurité entreprise, technologie sécurité, maintenance, télésurveillance",
+        content: "Securitas Technologie apporte son expertise mondiale en sécurité électronique. Solutions intégrées pour entreprises avec maintenance et télésurveillance.",
+        products: ["Systèmes intégrés", "Maintenance préventive", "Télésurveillance", "Formation utilisateurs"],
+        company: {
+          name: "Securitas Technologie",
+          speciality: "Sécurité électronique entreprise", 
+          certifications: ["APSAD", "ISO 9001"],
+          description: "Filiale technologique du groupe Securitas, leader mondial de la sécurité."
+        }
       }
-    ]
+    ],
+    financing: {
+      title: "Solutions de Financement",
+      description: "Facilitez vos projets sécurité avec nos partenaires financiers",
+      partners: [
+        {
+          name: "M2M Finance",
+          description: "Financement équipements et installation",
+          advantages: ["Taux préférentiels", "Réponse rapide", "Dossier simplifié"]
+        },
+        {
+          name: "Grenke",
+          description: "Location avec option d'achat", 
+          advantages: ["Préservation trésorerie", "Déductibilité fiscale", "Mise à jour technologique"]
+        }
+      ]
+    }
   },
 
   // Informatique solutions détaillées
