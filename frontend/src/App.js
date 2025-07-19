@@ -19,6 +19,10 @@ import LimovaPage from "./pages/LimovaPage";
 import AgentPage from "./pages/AgentPage";
 import ContactPage from "./pages/ContactPage";
 
+// Import SEO pages
+import BureauEtudesPage from "./pages/seo/BureauEtudesPage";
+import SolutionPage from "./pages/seo/SolutionPage";
+
 function App() {
   return (
     <div className="App">
@@ -35,6 +39,37 @@ function App() {
             <Route path="/limova" element={<LimovaPage />} />
             <Route path="/limova/agents/:agentId" element={<AgentPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            
+            {/* SEO Routes - Bureau d'études */}
+            <Route path="/domotique/bureau-etudes-domotique" element={<BureauEtudesPage service="domotique" />} />
+            <Route path="/securite/bureau-etudes-securite" element={<BureauEtudesPage service="securite" />} />
+            <Route path="/informatique/bureau-etudes-informatique" element={<BureauEtudesPage service="informatique" />} />
+            <Route path="/ia/bureau-etudes-ia" element={<BureauEtudesPage service="ia" />} />
+            
+            {/* SEO Routes - Solutions Domotique */}
+            <Route path="/domotique/luminaire-connecte" element={<SolutionPage service="domotique" solution="luminaire-connecte" />} />
+            <Route path="/domotique/chauffage-connecte" element={<SolutionPage service="domotique" solution="chauffage-connecte" />} />
+            <Route path="/domotique/volet-roulant-connecte" element={<SolutionPage service="domotique" solution="volet-roulant-connecte" />} />
+            <Route path="/domotique/gestion-energie-connectee" element={<SolutionPage service="domotique" solution="gestion-energie-connectee" />} />
+            <Route path="/domotique/robot-tondeuse-connecte" element={<SolutionPage service="domotique" solution="robot-tondeuse-connecte" />} />
+            
+            {/* SEO Routes - Solutions Sécurité */}
+            <Route path="/securite/grundig-securite" element={<SolutionPage service="securite" solution="grundig-securite" />} />
+            <Route path="/securite/videosurveillance-ip" element={<SolutionPage service="securite" solution="videosurveillance-ip" />} />
+            <Route path="/securite/controle-acces" element={<SolutionPage service="securite" solution="controle-acces" />} />
+            <Route path="/securite/alarme-anti-intrusion" element={<SolutionPage service="securite" solution="alarme-anti-intrusion" />} />
+            
+            {/* SEO Routes - Solutions Informatique */}
+            <Route path="/informatique/reseau-informatique" element={<SolutionPage service="informatique" solution="reseau-informatique" />} />
+            <Route path="/informatique/serveur-nas" element={<SolutionPage service="informatique" solution="serveur-nas" />} />
+            <Route path="/informatique/securite-informatique" element={<SolutionPage service="informatique" solution="securite-informatique" />} />
+            <Route path="/informatique/solutions-cloud" element={<SolutionPage service="informatique" solution="solutions-cloud" />} />
+            
+            {/* SEO Routes - Solutions IA */}
+            <Route path="/ia/limova-intelligence-artificielle" element={<SolutionPage service="ia" solution="limova-intelligence-artificielle" />} />
+            <Route path="/ia/chatbot-intelligent" element={<SolutionPage service="ia" solution="chatbot-intelligent" />} />
+            <Route path="/ia/automatisation-ia" element={<SolutionPage service="ia" solution="automatisation-ia" />} />
+            <Route path="/ia/analyse-donnees-ia" element={<SolutionPage service="ia" solution="analyse-donnees-ia" />} />
           </Routes>
         </main>
         <Footer />
