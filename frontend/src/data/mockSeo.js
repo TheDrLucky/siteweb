@@ -6,48 +6,88 @@ export const seoPages = {
       title: "Bureau d'Études Domotique - Expertise & Conseil",
       slug: "bureau-etudes-domotique",
       description: "Notre bureau d'études domotique vous accompagne dans la conception de votre projet maison connectée. Étude technique, dimensionnement et conseils personnalisés.",
-      content: "Expert en domotique depuis 2015..."
+      content: "Expert en domotique depuis 2015, notre bureau d'études couvre un large éventail de domaines pour rendre votre maison plus confortable, sécurisée et efficace. En 2025, l'optimisation énergétique est au cœur de nos préoccupations."
     },
     solutions: [
       {
         title: "Luminaire Connecté",
         slug: "luminaire-connecte", 
-        description: "Solutions d'éclairage connecté pour votre maison intelligente. Contrôle à distance, programmation et économies d'énergie garanties.",
-        keywords: "luminaire connecté, éclairage intelligent, ampoule connectée, variateur, KNX",
-        content: "L'éclairage connecté révolutionne votre quotidien...",
-        products: ["Philips Hue", "KNX éclairage", "Variateurs connectés", "Détecteurs de mouvement"]
+        description: "Automatisez vos éclairages pour un confort optimal. Profitez d'un contrôle total via votre smartphone, des scénarios d'éclairage personnalisés, et des économies d'énergie jusqu'à 40%.",
+        keywords: "luminaire connecté, éclairage intelligent, ampoule connectée, variateur, KNX, économie énergie",
+        content: "L'éclairage connecté révolutionne votre quotidien en 2025. Contrôle via smartphone, détection de présence automatique, adaptation à la luminosité naturelle. Réalisez jusqu'à 40% d'économies sur votre facture d'éclairage.",
+        products: ["Philips Hue", "KNX éclairage", "Variateurs connectés", "Détecteurs de mouvement", "Capteurs luminosité"]
       },
       {
         title: "Chauffage Connecté",
         slug: "chauffage-connecte",
-        description: "Système de chauffage intelligent pour optimiser votre confort et réduire vos factures. Programmation automatique et contrôle à distance.",
-        keywords: "chauffage connecté, thermostat intelligent, plancher chauffant, radiateur connecté",
-        content: "Le chauffage connecté vous permet de réaliser jusqu'à 25% d'économies...",
-        products: ["Thermostat Nest", "Radiateurs Thermor", "Plancher chauffant KNX", "Vannes thermostatiques"]
+        description: "Gérez votre chauffage à distance pour maintenir une température idéale tout en réduisant votre facture énergétique. Programmation intelligente selon vos habitudes.",
+        keywords: "chauffage connecté, thermostat intelligent, plancher chauffant, radiateur connecté, économie énergie",
+        content: "Le chauffage connecté vous permet de réaliser jusqu'à 30% d'économies en 2025. Programmation automatique, détection de présence, adaptation météo. Confort optimal et factures réduites.",
+        products: ["Thermostat Nest", "Radiateurs Thermor", "Plancher chauffant KNX", "Vannes thermostatiques", "Sondes température"]
       },
       {
         title: "Volet Roulant Connecté", 
         slug: "volet-roulant-connecte",
-        description: "Automatisation de vos volets roulants pour plus de confort et de sécurité. Programmation horaire et contrôle smartphone inclus.",
-        keywords: "volet roulant connecté, store automatique, motorisation volet, domotique volet",
-        content: "L'automatisation de vos volets apporte confort et sécurité...",
-        products: ["Moteurs Somfy", "Capteurs solaires", "Commandes murales", "Automatisation KNX"]
+        description: "Automatisez l'ouverture et la fermeture de vos volets roulants selon vos préférences ou en fonction des conditions météorologiques. Protection solaire intelligente.",
+        keywords: "volet roulant connecté, store automatique, motorisation volet, domotique volet, protection solaire",
+        content: "L'automatisation de vos volets optimise votre confort thermique. Contrôle selon les conditions météo, programmation horaire, protection anti-intrusion automatique.",
+        products: ["Moteurs Somfy", "Capteurs météo", "Commandes murales", "Automatisation KNX", "Stores extérieurs"]
       },
       {
         title: "Gestion de l'Énergie Connectée",
         slug: "gestion-energie-connectee", 
-        description: "Système intelligent de gestion énergétique. Monitoring en temps réel, optimisation automatique et réduction des coûts énergétiques.",
-        keywords: "gestion énergie, monitoring électrique, optimisation énergétique, compteur connecté",
-        content: "La gestion intelligente de l'énergie permet des économies substantielles...",
-        products: ["Compteurs intelligents", "Gestionnaires d'énergie", "Panneaux solaires connectés", "Batteries domestiques"]
+        description: "Optimisez votre consommation énergétique avec des systèmes de suivi en temps réel et des solutions pour réduire vos dépenses. Enjeu majeur 2025.",
+        keywords: "gestion énergie, monitoring électrique, optimisation énergétique, compteur connecté, transition énergétique",
+        content: "En 2025, la gestion intelligente de l'énergie est cruciale. Monitoring temps réel, optimisation automatique, intégration panneaux solaires. Réduisez votre empreinte carbone et vos factures de 25% minimum.",
+        products: ["Compteurs intelligents", "Gestionnaires d'énergie", "Panneaux solaires connectés", "Batteries domestiques", "Bornes de recharge VE"]
+      },
+      {
+        title: "Arrosage Automatique Connecté",
+        slug: "arrosage-automatique-connecte",
+        description: "Automatisez l'arrosage de votre jardin en fonction de la météo et des besoins spécifiques de vos plantes. Économies d'eau garanties.",
+        keywords: "arrosage automatique, irrigation connectée, capteur humidité, économie eau, jardin intelligent",
+        content: "L'arrosage automatique connecté optimise la consommation d'eau selon les besoins réels de vos plantes et les conditions météo. Jusqu'à 50% d'économies d'eau.",
+        products: ["Programmateurs connectés", "Capteurs humidité sol", "Électrovannes", "Goutte-à-goutte intelligent", "Stations météo"]
+      },
+      {
+        title: "Scénarios Personnalisés",
+        slug: "scenarios-personnalises",
+        description: "Programmez des routines intelligentes selon vos besoins : lever, coucher, départ, retour. Votre maison s'adapte automatiquement à votre mode de vie.",
+        keywords: "scénarios domotique, routines intelligentes, programmation automatique, maison connectée",
+        content: "Les scénarios personnalisés transforment votre quotidien. Mode réveil progressif, simulation de présence, économies automatiques. Votre maison anticipe vos besoins.",
+        products: ["Centrale domotique", "Détecteurs présence", "Programmateurs", "Interface smartphone", "Capteurs ouverture"]
+      },
+      {
+        title: "Sécurité Domestique Connectée",
+        slug: "securite-domestique-connectee",
+        description: "Protégez votre maison grâce à des systèmes d'alarme connectés, des détecteurs de mouvement, et des caméras de surveillance accessibles à distance.",
+        keywords: "sécurité domestique, alarme connectée, détecteur mouvement, caméra surveillance, protection maison",
+        content: "La sécurité domestique connectée vous protège 24h/24. Alertes smartphone instantanées, surveillance à distance, dissuasion automatique.",
+        products: ["Alarmes sans fil", "Caméras IP", "Détecteurs mouvement", "Sirènes connectées", "Badges d'accès"]
+      },
+      {
+        title: "Multimédia Connecté",
+        slug: "multimedia-connecte",
+        description: "Créez une ambiance unique avec un système audio/vidéo multiroom entièrement connecté. Musique et vidéo dans toute la maison.",
+        keywords: "multimédia connecté, audio multiroom, vidéo, sonorisation, home cinéma",
+        content: "Le multimédia connecté transforme votre maison en espace de divertissement. Audio multiroom, vidéo centralisée, contrôle unifié depuis votre smartphone.",
+        products: ["Systèmes multiroom", "Enceintes connectées", "Amplificateurs", "Écrans muraux", "Serveurs multimédia"]
+      },
+      {
+        title: "Portes et Portails Connectés",
+        slug: "portes-portails-connectes",
+        description: "Gérez vos portes, portails, et interphones vidéo à distance pour un contrôle d'accès simplifié et sécurisé. Ouvrez depuis votre smartphone.",
+        keywords: "portail connecté, interphone vidéo, contrôle d'accès, porte automatique, serrure connectée",
+        content: "Le contrôle d'accès connecté simplifie votre quotidien. Ouverture à distance, interphone vidéo, badges d'accès. Sécurité et confort optimisés.",
+        products: ["Motorisations portail", "Interphones vidéo", "Serrures connectées", "Digicode", "Badges RFID"]
       },
       {
         title: "Robot Tondeuse Connecté",
         slug: "robot-tondeuse-connecte",
         description: "Robots tondeuses nouvelle génération Mammotion et Hooki. Tonte automatique intelligente, contrôle smartphone et navigation GPS.",
         keywords: "robot tondeuse, Mammotion, Hooki, tonte automatique, pelouse connectée",
-        content: "Les robots tondeuses connectés révolutionnent l'entretien de votre jardin...",
-        products: ["Mammotion LUBA", "Hooki M1", "Stations de recharge", "Câbles périmètriques virtuels"]
+        content: "Les robots tondeuses connectés révolutionnent l'entretien de votre jardin. Navigation GPS précise, tonte intelligente selon météo, économies d'énergie.",
+        products: ["Mammotion LUBA", "Hooki M1", "Stations de recharge", "Capteurs météo", "Applications smartphone"]
       }
     ]
   },
