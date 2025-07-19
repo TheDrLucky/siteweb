@@ -9,8 +9,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from './ui/navigation-menu';
-import { Phone, Menu, X, ChevronDown } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown, Home, Shield, Monitor, Brain } from 'lucide-react';
 import { mockData } from '../data/mock';
+import { seoPages } from '../data/mockSeo';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,6 +20,17 @@ const Header = () => {
   const isActive = (path) => {
     if (path === '/') return location.pathname === '/';
     return location.pathname.startsWith(path);
+  };
+
+  const getServiceIcon = (serviceId) => {
+    const icons = {
+      'domotique': Home,
+      'securite': Shield, 
+      'informatique': Monitor,
+      'ia': Brain
+    };
+    const IconComponent = icons[serviceId] || Home;
+    return <IconComponent className="w-4 h-4" />;
   };
 
   return (
@@ -53,27 +65,117 @@ const Header = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={`px-4 py-2 text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
-                    isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
+                    isActive('/services') || isActive('/domotique') || isActive('/securite') || isActive('/informatique') || isActive('/ia') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                   }`}>
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-64 p-2">
-                      {mockData.services.map((service) => (
-                        <NavigationMenuLink key={service.id} asChild>
-                          <Link
-                            to={`/services/${service.id}`}
-                            className="block px-3 py-2 rounded-md text-sm hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                          >
-                            <div className="font-medium">{service.title}</div>
-                            <div className="text-xs text-gray-500">{service.subtitle}</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      ))}
+                    <div className="w-80 p-2">
+                      {/* Domotique */}
+                      <div className="mb-4">
+                        <div className="flex items-center space-x-2 px-3 py-2 font-medium text-gray-900">
+                          {getServiceIcon('domotique')}
+                          <span>Domotique</span>
+                        </div>
+                        <div className="pl-6 space-y-1">
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to="/domotique/bureau-etudes-domotique"
+                              className="block px-3 py-1 rounded-md text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                            >
+                              Bureau d'études
+                            </Link>
+                          </NavigationMenuLink>
+                          {seoPages.domotique.solutions.slice(0, 3).map((solution) => (
+                            <NavigationMenuLink key={solution.slug} asChild>
+                              <Link
+                                to={`/domotique/${solution.slug}`}
+                                className="block px-3 py-1 rounded-md text-xs text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                              >
+                                {solution.title}
+                              </Link>
+                            </NavigationMenuLink>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Sécurité */}
+                      <div className="mb-4">
+                        <div className="flex items-center space-x-2 px-3 py-2 font-medium text-gray-900">
+                          {getServiceIcon('securite')}
+                          <span>Sécurité</span>
+                        </div>
+                        <div className="pl-6 space-y-1">
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to="/securite/bureau-etudes-securite"
+                              className="block px-3 py-1 rounded-md text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                            >
+                              Bureau d'études
+                            </Link>
+                          </NavigationMenuLink>
+                          {seoPages.securite.solutions.slice(0, 2).map((solution) => (
+                            <NavigationMenuLink key={solution.slug} asChild>
+                              <Link
+                                to={`/securite/${solution.slug}`}
+                                className="block px-3 py-1 rounded-md text-xs text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                              >
+                                {solution.title}
+                              </Link>
+                            </NavigationMenuLink>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Informatique & IA en ligne */}
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <div className="flex items-center space-x-2 px-3 py-2 font-medium text-gray-900">
+                            {getServiceIcon('informatique')}
+                            <span>Informatique</span>
+                          </div>
+                          <div className="pl-6 space-y-1">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                to="/informatique/bureau-etudes-informatique"
+                                className="block px-3 py-1 rounded-md text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                              >
+                                Bureau d'études
+                              </Link>
+                            </NavigationMenuLink>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div className="flex items-center space-x-2 px-3 py-2 font-medium text-gray-900">
+                            {getServiceIcon('ia')}
+                            <span>Intelligence IA</span>
+                          </div>
+                          <div className="pl-6 space-y-1">
+                            <NavigationMenuLink asChild>
+                              <Link
+                                to="/ia/bureau-etudes-ia"
+                                className="block px-3 py-1 rounded-md text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                              >
+                                Bureau d'études
+                              </Link>
+                            </NavigationMenuLink>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                to="/ia/limova-intelligence-artificielle"
+                                className="block px-3 py-1 rounded-md text-xs text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                              >
+                                Limova IA
+                              </Link>
+                            </NavigationMenuLink>
+                          </div>
+                        </div>
+                      </div>
+
                       <NavigationMenuLink asChild>
                         <Link
                           to="/services"
-                          className="block px-3 py-2 mt-2 pt-2 border-t text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-md transition-colors"
+                          className="block px-3 py-2 mt-4 pt-4 border-t text-sm font-medium text-blue-600 hover:bg-blue-50 rounded-md transition-colors"
                         >
                           Voir tous les services →
                         </Link>
@@ -101,17 +203,6 @@ const Header = () => {
                     }`}
                   >
                     Blog
-                  </Link>
-                </NavigationMenuLink>
-
-                <NavigationMenuLink asChild>
-                  <Link 
-                    to="/limova" 
-                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
-                      isActive('/limova') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
-                    }`}
-                  >
-                    Limova IA
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuList>
@@ -142,7 +233,7 @@ const Header = () => {
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto">
             <Link
               to="/"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
@@ -153,22 +244,82 @@ const Header = () => {
               Accueil
             </Link>
 
+            {/* Services Mobile */}
             <div className="space-y-1">
               <div className="px-3 py-2 text-base font-medium text-gray-700 flex items-center justify-between">
                 Services
                 <ChevronDown className="w-4 h-4" />
               </div>
-              <div className="pl-6 space-y-1">
-                {mockData.services.map((service) => (
+              
+              {/* Domotique Mobile */}
+              <div className="pl-4 space-y-1">
+                <div className="px-3 py-1 text-sm font-medium text-gray-800">🏠 Domotique</div>
+                <Link
+                  to="/domotique/bureau-etudes-domotique"
+                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Bureau d'études
+                </Link>
+                {seoPages.domotique.solutions.slice(0, 2).map((solution) => (
                   <Link
-                    key={service.id}
-                    to={`/services/${service.id}`}
-                    className="block px-3 py-2 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+                    key={solution.slug}
+                    to={`/domotique/${solution.slug}`}
+                    className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    {service.title}
+                    {solution.title}
                   </Link>
                 ))}
+              </div>
+
+              {/* Sécurité Mobile */}
+              <div className="pl-4 space-y-1">
+                <div className="px-3 py-1 text-sm font-medium text-gray-800">🛡️ Sécurité</div>
+                <Link
+                  to="/securite/bureau-etudes-securite"
+                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Bureau d'études
+                </Link>
+                <Link
+                  to="/securite/grundig-securite"
+                  className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Grundig Sécurité
+                </Link>
+              </div>
+
+              {/* Informatique & IA Mobile */}
+              <div className="pl-4 space-y-1">
+                <div className="px-3 py-1 text-sm font-medium text-gray-800">💻 Informatique</div>
+                <Link
+                  to="/informatique/bureau-etudes-informatique"
+                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Bureau d'études
+                </Link>
+              </div>
+
+              <div className="pl-4 space-y-1">
+                <div className="px-3 py-1 text-sm font-medium text-gray-800">🤖 Intelligence IA</div>
+                <Link
+                  to="/ia/bureau-etudes-ia"
+                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Bureau d'études
+                </Link>
+                <Link
+                  to="/ia/limova-intelligence-artificielle"
+                  className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Limova IA
+                </Link>
               </div>
             </div>
 
@@ -190,16 +341,6 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
-            </Link>
-
-            <Link
-              to="/limova"
-              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                isActive('/limova') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Limova IA
             </Link>
 
             <div className="pt-4 border-t">
