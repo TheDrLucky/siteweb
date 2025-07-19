@@ -51,13 +51,19 @@ function App() {
             <Route path="/domotique/chauffage-connecte" element={<SolutionPage service="domotique" solution="chauffage-connecte" />} />
             <Route path="/domotique/volet-roulant-connecte" element={<SolutionPage service="domotique" solution="volet-roulant-connecte" />} />
             <Route path="/domotique/gestion-energie-connectee" element={<SolutionPage service="domotique" solution="gestion-energie-connectee" />} />
+            <Route path="/domotique/arrosage-automatique-connecte" element={<SolutionPage service="domotique" solution="arrosage-automatique-connecte" />} />
+            <Route path="/domotique/scenarios-personnalises" element={<SolutionPage service="domotique" solution="scenarios-personnalises" />} />
+            <Route path="/domotique/securite-domestique-connectee" element={<SolutionPage service="domotique" solution="securite-domestique-connectee" />} />
+            <Route path="/domotique/multimedia-connecte" element={<SolutionPage service="domotique" solution="multimedia-connecte" />} />
+            <Route path="/domotique/portes-portails-connectes" element={<SolutionPage service="domotique" solution="portes-portails-connectes" />} />
             <Route path="/domotique/robot-tondeuse-connecte" element={<SolutionPage service="domotique" solution="robot-tondeuse-connecte" />} />
             
             {/* SEO Routes - Solutions Sécurité */}
-            <Route path="/securite/grundig-securite" element={<SolutionPage service="securite" solution="grundig-securite" />} />
-            <Route path="/securite/videosurveillance-ip" element={<SolutionPage service="securite" solution="videosurveillance-ip" />} />
-            <Route path="/securite/controle-acces" element={<SolutionPage service="securite" solution="controle-acces" />} />
-            <Route path="/securite/alarme-anti-intrusion" element={<SolutionPage service="securite" solution="alarme-anti-intrusion" />} />
+            <Route path="/securite/ajax-systems-alarme" element={<SolutionPage service="securite" solution="ajax-systems-alarme" />} />
+            <Route path="/securite/grundig-videosurveillance" element={<SolutionPage service="securite" solution="grundig-videosurveillance" />} />
+            <Route path="/securite/controle-acces-professionnel" element={<SolutionPage service="securite" solution="controle-acces-professionnel" />} />
+            <Route path="/securite/telesurveillance-cors-online" element={<SolutionPage service="securite" solution="telesurveillance-cors-online" />} />
+            <Route path="/securite/securitas-technologie" element={<SolutionPage service="securite" solution="securitas-technologie" />} />
             
             {/* SEO Routes - Solutions Informatique */}
             <Route path="/informatique/reseau-informatique" element={<SolutionPage service="informatique" solution="reseau-informatique" />} />
