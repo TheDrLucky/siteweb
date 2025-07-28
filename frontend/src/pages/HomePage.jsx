@@ -141,6 +141,14 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Boutique Block */}
+      <BoutiqueBlock 
+        title="Nos solutions clé en main avec prix transparents"
+        description="Découvrez nos packs et services d'installation avec tarifs clairs. Devis gratuit et conseils personnalisés inclus."
+        showFeatured={true}
+        maxItems={3}
+      />
+
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
