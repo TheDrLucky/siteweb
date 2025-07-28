@@ -44,14 +44,14 @@ const ServicesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nos domaines d'expertise
+              Nos prestations technologiques
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Solutions technologiques complètes pour particuliers et professionnels. 
-              Une approche artisanale et personnalisée depuis la Bretagne.
+              <strong>Entreprise d'installation et de maintenance</strong> - Solutions technologiques complètes 
+              pour particuliers et professionnels. Approche artisanale et personnalisée depuis la Bretagne.
             </p>
             <Badge variant="outline" className="px-4 py-2 bg-white">
-              4 domaines d'expertise • Grand Ouest • Solutions sur-mesure
+              4 domaines d'expertise • Installation • Maintenance • Grand Ouest
             </Badge>
           </div>
         </div>
