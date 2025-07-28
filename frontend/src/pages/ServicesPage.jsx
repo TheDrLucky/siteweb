@@ -8,6 +8,7 @@ import {
   ArrowRight, CheckCircle, Phone
 } from 'lucide-react';
 import { mockData } from '../data/mock';
+import BoutiqueBlock from '../components/BoutiqueBlock';
 
 const ServicesPage = () => {
   const getServiceIcon = (iconName) => {
