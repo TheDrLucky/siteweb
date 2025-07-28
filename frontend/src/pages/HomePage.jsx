@@ -45,7 +45,7 @@ const HomePage = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-blue-600 font-medium mb-4">
-              {mockData.hero.subtitle}
+              Entreprise de prestations technologiques • Grand Ouest
             </p>
             
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
