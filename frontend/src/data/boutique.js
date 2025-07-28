@@ -152,13 +152,20 @@ export const boutiqueData = {
       currency: "€",
       category: "securite",
       description: "Kit alarme Ajax Systems pour protection périmétrique de base",
+      image: "/boutique/ajax-starter.jpg",
       includes: [
         "Hub Ajax noir ou blanc",
         "2 détecteurs volumétriques",
         "2 détecteurs d'ouverture", 
         "1 télécommande",
         "Configuration complète"
-      ]
+      ],
+      technical: {
+        range: "Portée radio 2km",
+        connectivity: "WiFi, Ethernet, 4G",
+        warranty: "5 ans fabricant",
+        monitoring: "24h autonomie"
+      }
     },
     {
       id: "videosurveillance-grundig",
@@ -168,13 +175,43 @@ export const boutiqueData = {
       currency: "€",
       category: "securite",
       description: "Système vidéosurveillance Grundig 4 caméras avec enregistreur",
+      image: "/boutique/grundig-pack.jpg",
       includes: [
         "4 caméras IP 4K Grundig",
         "Enregistreur NVR 8 voies",
         "Disque dur 2TB",
         "Câblage et installation",
         "Configuration accès distant"
-      ]
+      ],
+      technical: {
+        resolution: "4K Ultra HD",
+        storage: "2TB extensible à 8TB",
+        nightvision: "Vision nocturne 30m",
+        warranty: "3 ans fabricant"
+      }
+    },
+    {
+      id: "controle-acces-badge",
+      title: "Contrôle d'Accès par Badge",
+      subtitle: "Sécurisation des accès",
+      price: 449.99,
+      currency: "€",
+      category: "securite",
+      description: "Système de contrôle d'accès professionnel avec lecteurs de badges",
+      image: "/boutique/controle-acces.jpg",
+      includes: [
+        "2 lecteurs de badges",
+        "Centrale de contrôle",
+        "50 badges RFID",
+        "Logiciel de gestion",
+        "Installation et formation"
+      ],
+      technical: {
+        users: "Jusqu'à 500 utilisateurs",
+        connectivity: "TCP/IP, RS485",
+        compatibility: "Badges RFID/NFC",
+        warranty: "2 ans installation"
+      }
     }
   ],
 
