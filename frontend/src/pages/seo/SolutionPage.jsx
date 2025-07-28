@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { seoPages } from '../../data/mockSeo';
 import { mockData } from '../../data/mock';
+import BoutiqueBlock from '../../components/BoutiqueBlock';
 
 const SolutionPage = ({ service, solution }) => {
   const serviceData = seoPages[service];
