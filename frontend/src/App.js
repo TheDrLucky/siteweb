@@ -39,6 +39,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/limova" element={<LimovaPage />} />
             <Route path="/limova/agents/:agentId" element={<AgentPage />} />
+            <Route path="/boutique" element={<BoutiquePage />} />
             <Route path="/contact" element={<ContactPage />} />
             
             {/* SEO Routes - Bureau d'études */}
