@@ -132,6 +132,14 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Boutique Block */}
+      <BoutiqueBlock 
+        title="Nos solutions avec prix détaillés"
+        description="Découvrez nos packs d'installation et services avec tarifs transparents. Conseils techniques gratuits."
+        showFeatured={true}
+        maxItems={4}
+      />
+
       {/* Process Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
