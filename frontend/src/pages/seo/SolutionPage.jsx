@@ -443,6 +443,15 @@ const SolutionPage = ({ service, solution }) => {
         </div>
       </section>
 
+      {/* Boutique Block - Solutions spécifiques */}
+      <BoutiqueBlock 
+        category={service}
+        title={`Solutions ${solutionData.title.toLowerCase()} avec tarifs`}
+        description={`Découvrez nos offres d'installation ${solutionData.title.toLowerCase()} avec prix transparents et garantie incluse.`}
+        showFeatured={false}
+        maxItems={3}
+      />
+
       {/* Testimonial Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
