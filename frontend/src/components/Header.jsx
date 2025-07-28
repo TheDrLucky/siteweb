@@ -336,6 +336,17 @@ const Header = () => {
             </div>
 
             <Link
+              to="/boutique"
+              className={`flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <ShoppingCart className="w-4 h-4 mr-2" />
+              Boutique
+            </Link>
+
+            <Link
               to="/about"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
