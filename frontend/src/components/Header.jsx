@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from './ui/navigation-menu';
-import { Phone, Menu, X, ChevronDown, Home, Shield, Monitor, Brain } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown, Home, Shield, Monitor, Brain, ShoppingCart } from 'lucide-react';
 import { mockData } from '../data/mock';
 import { seoPages } from '../data/mockSeo';
 
