@@ -186,6 +186,18 @@ const Header = () => {
 
                 <NavigationMenuLink asChild>
                   <Link 
+                    to="/boutique" 
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
+                      isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
+                    }`}
+                  >
+                    <ShoppingCart className="w-4 h-4 mr-1 inline" />
+                    Boutique
+                  </Link>
+                </NavigationMenuLink>
+
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/about" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
