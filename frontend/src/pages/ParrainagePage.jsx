@@ -220,7 +220,7 @@ const ParrainagePage = () => {
                 location: "Châteaubourg", 
                 project: "A parrainé ses parents pour sécurité",
                 reward: "50€",
-                content: "Mes parents cherchaient un système de sécurité. Godeloup a fait une installation Ajax parfaite chez eux, ils ont eu 5% de remise et moi mon bon d'achat. Je recommande !",
+                content: "Mes parents cherchaient un système de sécurité. Godeloup a fait une installation Ajax parfaite chez eux, ils ont eu 5% de remise et moi ma carte-cadeau. Je recommande !",
                 rating: 5
               }
             ].map((testimonial, index) => (
