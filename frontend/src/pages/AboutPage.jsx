@@ -56,7 +56,11 @@ const AboutPage = () => {
               </h2>
               
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p>{mockData.company.mission}</p>
+                <p>
+                  Notre mission est de transformer votre habitat et vos espaces de travail en environnements intelligents, 
+                  sécurisés et efficaces. Nous croyons que la technologie doit servir l'humain et simplifier le quotidien, 
+                  tout en respectant vos besoins spécifiques et votre budget.
+                </p>
                 <p>{mockData.company.specialties}</p>
                 <p>{mockData.company.approach}</p>
               </div>
@@ -67,7 +71,7 @@ const AboutPage = () => {
                   <div className="text-sm text-gray-600">Année de création</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">8+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">10+</div>
                   <div className="text-sm text-gray-600">Années d'expérience</div>
                 </div>
               </div>
