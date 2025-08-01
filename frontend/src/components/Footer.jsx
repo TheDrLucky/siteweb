@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Youtube } from 'lucide-react';
+import { 
+  Phone, Mail, MapPin, Clock, Facebook, Linkedin, Youtube,
+  Shield, Home, Monitor, Brain, Gift, Award, CheckCircle
+} from 'lucide-react';
 import { mockData } from '../data/mock';
 
 const Footer = () => {
