@@ -22,11 +22,11 @@ import BoutiquePage from "./pages/BoutiquePage";
 import ParrainagePage from "./pages/ParrainagePage";
 import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 import PolitiqueConfidentialitePage from "./pages/PolitiqueConfidentialitePage";
-import RobotTondeusePage from "./pages/RobotTondeusePage";
 import NosMarquesPage from "./pages/NosMarquesPage";
 import TopologiesPage from "./pages/TopologiesPage";
 import TopologyDetailPage from "./pages/TopologyDetailPage";
 import CityServicePage from "./pages/CityServicePage";
+import ZonesInterventionPage from "./pages/ZonesInterventionPage";
 
 // Import SEO pages
 import BureauEtudesPage from "./pages/seo/BureauEtudesPage";
@@ -51,10 +51,10 @@ function App() {
             <Route path="/parrainage" element={<ParrainagePage />} />
             <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialitePage />} />
-            <Route path="/robot-tondeuse" element={<RobotTondeusePage />} />
             <Route path="/nos-marques" element={<NosMarquesPage />} />
             <Route path="/topologies" element={<TopologiesPage />} />
             <Route path="/topologies/:topologyId" element={<TopologyDetailPage />} />
+            <Route path="/zones-intervention" element={<ZonesInterventionPage />} />
             <Route path="/contact" element={<ContactPage />} />
             
             {/* SEO Routes - Bureau d'études */}
@@ -93,6 +93,9 @@ function App() {
             <Route path="/ia/chatbot-intelligent" element={<SolutionPage service="ia" solution="chatbot-intelligent" />} />
             <Route path="/ia/automatisation-ia" element={<SolutionPage service="ia" solution="automatisation-ia" />} />
             <Route path="/ia/analyse-donnees-ia" element={<SolutionPage service="ia" solution="analyse-donnees-ia" />} />
+            
+            {/* Redirection Robot Tondeuse vers Domotique */}
+            <Route path="/robot-tondeuse" element={<ServiceDetailPage />} />
             
             {/* SEO Routes - City-Service Pages */}
             {/* Vitré */}
