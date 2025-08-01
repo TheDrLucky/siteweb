@@ -318,10 +318,13 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Création page boutique principale"
-    - "Intégration bloc boutique page d'accueil"
-    - "Navigation boutique dans Header"
-    - "Intégration bloc boutique pages solutions"
+    - "Intégration contenu détaillé mockData"
+    - "Intégration contenu détaillé services"
+    - "Mise à jour topologies avec contenu détaillé"
+    - "Mise à jour page About avec contenu enrichi"
+    - "Création données villes pour SEO"
+    - "Création composant pages SEO ville-service"
+    - "Ajout routes SEO ville-service dans App.js"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
