@@ -7,7 +7,7 @@ import {
   Home, Shield, Monitor, Brain, 
   ArrowRight, CheckCircle, Phone, MapPin,
   Briefcase, Building2, ShoppingBag, UtensilsCrossed, 
-  Heart, Tent, Building, Users
+  Heart, Tent, Building, Users, Award
 } from 'lucide-react';
 import { mockData } from '../data/mock';
 import { topologieData } from '../data/topologies';
