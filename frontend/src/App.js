@@ -50,6 +50,8 @@ function App() {
             <Route path="/parrainage" element={<ParrainagePage />} />
             <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialitePage />} />
+            <Route path="/robot-tondeuse" element={<RobotTondeusePage />} />
+            <Route path="/nos-marques" element={<NosMarquesPage />} />
             <Route path="/topologies" element={<TopologiesPage />} />
             <Route path="/topologies/:topologyId" element={<TopologyDetailPage />} />
             <Route path="/contact" element={<ContactPage />} />
