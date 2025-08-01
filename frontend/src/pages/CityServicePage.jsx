@@ -12,7 +12,23 @@ import { servicesData } from '../data/mockServices';
 import { mockData } from '../data/mock';
 
 const CityServicePage = () => {
-  const { city, service } = useParams();
+  const location = useLocation();
+  const pathname = location.pathname;
+  
+  // Extract city and service from pathname like "/vitre-domotique"
+  const pathParts = pathname.substring(1).split('-'); // Remove leading slash and split
+  let city, service;
+  
+  if (pathParts.length >= 2) {
+    // Handle cases like "la-guerche-de-bretagne-domotique"
+    if (pathParts[0] === 'la' && pathParts[1] === 'guerche') {
+      city = 'la-guerche-de-bretagne';
+      service = pathParts[4]; // Skip "la", "guerche", "de", "bretagne"
+    } else {
+      city = pathParts[0];
+      service = pathParts[1];
+    }
+  }
   
   const cityInfo = citiesData[city];
   const serviceInfo = servicesForSEO[service];
