@@ -43,6 +43,7 @@ function App() {
             <Route path="/limova" element={<LimovaPage />} />
             <Route path="/limova/agents/:agentId" element={<AgentPage />} />
             <Route path="/boutique" element={<BoutiquePage />} />
+            <Route path="/parrainage" element={<ParrainagePage />} />
             <Route path="/topologies" element={<TopologiesPage />} />
             <Route path="/topologies/:topologyId" element={<TopologyDetailPage />} />
             <Route path="/contact" element={<ContactPage />} />
