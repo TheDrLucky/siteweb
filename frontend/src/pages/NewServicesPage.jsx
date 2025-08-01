@@ -264,6 +264,92 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Nos certifications et partenariats
+            </h2>
+            <p className="text-xl text-blue-100">
+              Des qualifications officielles qui garantissent la qualité de nos prestations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <Card className="text-center border-0 shadow-lg bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-red-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">Ajax Systems</h3>
+                <p className="text-xs text-gray-600 mb-2">Certifié</p>
+                <div className="space-y-1">
+                  <Badge variant="outline" className="text-xs">Baseline</Badge>
+                  <Badge variant="outline" className="text-xs">Fibra</Badge>
+                  <Badge variant="outline" className="text-xs">Superior</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-lg bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Home className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">Control4</h3>
+                <p className="text-xs text-gray-600 mb-2">Certifié</p>
+                <Badge variant="outline" className="text-xs">Domotique</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-lg bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Monitor className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">Schneider Electric</h3>
+                <p className="text-xs text-gray-600 mb-2">Partenaire</p>
+                <Badge variant="outline" className="text-xs">Officiel</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-lg bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-purple-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">Qualibat</h3>
+                <p className="text-xs text-gray-600 mb-2">Agréé</p>
+                <Badge variant="outline" className="text-xs">Assurance</Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-lg bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-teal-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-sm mb-2">Formation</h3>
+                <p className="text-xs text-gray-600 mb-2">Continue</p>
+                <Badge variant="outline" className="text-xs">Mise à jour</Badge>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-blue-100 mb-4">
+              Ces certifications vous garantissent une installation conforme et un service après-vente optimal.
+            </p>
+            <Button asChild variant="secondary" size="lg">
+              <Link to="/about">
+                En savoir plus sur notre expertise
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Cross-links to Topologies */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
