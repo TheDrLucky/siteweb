@@ -60,7 +60,7 @@ const HomePage = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="px-8 py-3">
-                <Link to="/services">
+                <Link to="/topologies">
                   {mockData.hero.ctaSecondary}
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
