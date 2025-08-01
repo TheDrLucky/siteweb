@@ -188,7 +188,7 @@ const HomePage = () => {
               </h2>
               
               <div className="space-y-4">
-                {mockData.about.values.map((value, index) => (
+                {mockData.about.values_details.map((value, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                       <CheckCircle className="w-5 h-5 text-blue-600" />
