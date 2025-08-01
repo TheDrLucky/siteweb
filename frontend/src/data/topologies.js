@@ -338,34 +338,30 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité Résidents",
+          category: "👥 Sécurité Résidents",
           services: [
             "Vidéosurveillance périmètre et couloirs",
             "Contrôle d'accès sécurisé visiteurs",
             "Détection chute et malaise",
-            "Alarme anti-fugue résidents",
-            "Système d'appel malade", 
-            "Télésurveillance médicale"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Confort de Vie",
+          category: "💖 Confort de Vie",
           services: [
             "Éclairage adapté seniors (gradation)",
             "Climatisation zones de vie",
             "Sonorisation espaces communs",
-            "Domotique chambres individuelles",
-            "Jardin thérapeutique connecté"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Gestion Établissement",
+          category: "🏥 Gestion Établissement",
           services: [
             "Contrôle d'accès personnel soignant",
             "Surveillance cuisine collective",
             "Gestion technique centralisée",
-            "Monitoring énergétique",
-            "Système de communication interne"
+            "+ 2 autres services"
           ]
         }
       ],
@@ -374,14 +370,12 @@ export const topologieData = {
         "Sécurité maximale des résidents",
         "Bien-être et confort adaptés",
         "Conformité réglementaire sanitaire",
-        "Tranquillité des familles",
-        "Efficacité équipes soignantes"
+        "Facilitation travail personnel soignant"
       ],
       
       exemples: [
         "EHPAD Vitré - Sécurité et confort complets",
-        "Résidence autonomie Châteaubourg - Domotique adaptée",
-        "Foyer logement Liffré - Contrôle d'accès et surveillance"
+        "Résidence autonomie Châteaubourg - Domotique"
       ]
     },
 
