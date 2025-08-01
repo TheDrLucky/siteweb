@@ -89,7 +89,15 @@ const ServiceDetailPage = () => {
             <span>/</span>
             <Link to="/services" className="hover:text-blue-600">Services</Link>
             <span>/</span>
-            <span className="text-gray-900 font-medium">{service.title}</span>
+            {isRobotTondeuse ? (
+              <>
+                <Link to="/services/domotique" className="hover:text-blue-600">Domotique</Link>
+                <span>/</span>
+                <span className="text-gray-900 font-medium">Robot Tondeuse</span>
+              </>
+            ) : (
+              <span className="text-gray-900 font-medium">{service.title}</span>
+            )}
           </div>
         </div>
       </div>
