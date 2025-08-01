@@ -3,8 +3,13 @@ export const mockData = {
   // Company information
   company: {
     name: "Godeloup Domotique",
-    tagline: "Votre expert en solutions connectées, sécurité et technologies avancées",
-    description: "Découvrez des solutions sur-mesure en domotique, sécurité, informatique et intelligence artificielle, adaptées à vos besoins professionnels et résidentiels dans le Grand Ouest.",
+    tagline: "Des solutions connectées pour l'intérieur et l'extérieur",
+    description: "Godeloup Domotique est votre expert régional en domotique, sécurité, informatique et intelligence artificielle. Basée à Vitré en Bretagne, notre entreprise accompagne depuis 2015 les particuliers, professionnels et collectivités du Grand Ouest dans leurs projets technologiques sur-mesure.",
+    mission: "Nous proposons une approche globale : non seulement votre bâtiment (maison, bureau, commerce…) devient intelligent et sécurisé, mais vos extérieurs peuvent aussi être automatisés pour plus de confort et d'efficacité.",
+    specialties: "Lumières, chauffage, alarmes, vidéosurveillance, contrôle d'accès, réseau informatique, robots tondeuses, arrosage automatique, assistants virtuels – nous intégrons toutes ces solutions au service de votre quotidien.",
+    approach: "Chaque projet est unique, et nous mettons un point d'honneur à offrir un service personnalisé alliant expertise technique et qualité artisanale.",
+    founded: "2015",
+    location: "Vitré, Bretagne",
     phone: "02 99 XX XX XX",
     email: "contact@godeloupdomotique.fr",
     address: "Vitré, Bretagne - Intervention Grand Ouest",
