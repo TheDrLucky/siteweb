@@ -442,51 +442,44 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité Publique",
+          category: "🏛️ Sécurité Publique",
           services: [
             "Vidéosurveillance urbaine et espaces publics",
             "Éclairage public intelligent et sécurisé",
             "Alarme bâtiments municipaux (mairie, écoles)",
-            "Contrôle d'accès équipements sensibles",
-            "Détection intrusion sites techniques",
-            "Télésurveillance patrimoine communal"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Équipements Municipaux",
+          category: "🏢 Équipements Municipaux",
           services: [
             "Domotique mairie et annexes",
             "Automatisation gymnases et salles",
             "Gestion éclairage public (LED)",
-            "Arrosage automatique espaces verts",
-            "Robots tondeuses pour parcs municipaux",
-            "Sonorisation événements publics"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Services Citoyens",
+          category: "📡 Services Citoyens",
           services: [
             "Wi-Fi public gratuit sécurisé",
             "Affichage numérique municipal",
             "Borne de recharge véhicules électriques",
-            "Système d'alerte population",
-            "Solutions smart city connectées"
+            "+ 2 autres services"
           ]
         }
       ],
       
       avantages: [
         "Sécurité renforcée espaces publics",
-        "Économies budgétaires substantielles", 
+        "Économies budgétaires substantielles",
         "Services citoyens modernisés",
-        "Image commune dynamique",
-        "Gestion technique simplifiée"
+        "Image municipale dynamique"
       ],
       
       exemples: [
         "Mairie Vitré - Vidéosurveillance et domotique",
-        "École Châteaubourg - Sécurité et éclairage",
-        "Gymnase Liffré - Automatisation complète"
+        "École Châteaubourg - Sécurité et éclairage"
       ]
     },
 
