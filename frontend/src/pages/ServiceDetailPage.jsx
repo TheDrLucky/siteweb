@@ -115,15 +115,18 @@ const ServiceDetailPage = () => {
               </Button>
               
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                {service.title}
+                {isRobotTondeuse ? 'Robot Tondeuse Connecté' : service.title}
               </h1>
               
               <p className="text-2xl font-medium text-gray-600 mb-6">
-                {service.subtitle}
+                {isRobotTondeuse ? 'Entretien automatique de votre pelouse' : service.subtitle}
               </p>
               
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                {service.description}
+                {isRobotTondeuse 
+                  ? service.robotTondeuse?.description || "Fini la corvée de tonte ! Nos robots tondeuses de dernière génération entretiennent votre pelouse de façon autonome, sans intervention humaine."
+                  : service.description
+                }
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
