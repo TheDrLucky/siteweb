@@ -303,6 +303,124 @@ const ServiceDetailPage = () => {
         </section>
       )}
 
+      {/* Section Ajax & Grundig pour service sécurité */}
+      {actualServiceId === 'securite' && service.partnerships && (
+        <section className="py-20 bg-gradient-to-br from-red-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <Badge variant="outline" className="mb-6 px-4 py-2 bg-white border-red-200 text-red-700">
+                🏆 Partenariats officiels
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Ajax Systems & Grundig Security
+              </h2>
+              <p className="text-lg text-gray-600">
+                Partenaire certifié des leaders européens de la sécurité pour vous offrir 
+                les meilleures technologies du marché.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Ajax Systems */}
+              <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="text-center mb-8">
+                    <div className="w-20 h-20 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                      <Shield className="w-10 h-10 text-red-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {service.partnerships.ajax.title}
+                    </h3>
+                    <p className="text-gray-600 mb-6">
+                      {service.partnerships.ajax.description}
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 mb-8">
+                    <h4 className="font-semibold text-gray-900">Certifications Ajax :</h4>
+                    <div className="grid grid-cols-1 gap-3">
+                      {service.partnerships.ajax.certifications.map((cert, index) => (
+                        <div key={index} className="flex items-center space-x-3 p-3 bg-red-50 rounded-lg">
+                          <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0" />
+                          <span className="text-gray-700 font-medium">{cert}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900">Nos services Ajax :</h4>
+                    {service.partnerships.ajax.specialties.map((specialty, index) => (
+                      <div key={index} className="flex items-center space-x-3">
+                        <CheckCircle className="w-4 h-4 text-red-600 flex-shrink-0" />
+                        <span className="text-sm text-gray-700">{specialty}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Grundig Security */}
+              <Card className="border-0 shadow-xl hover:shadow-2xl transition-shadow">
+                <CardContent className="p-8">
+                  <div className="text-center mb-8">
+                    <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                      <Monitor className="w-10 h-10 text-blue-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {service.partnerships.grundig.title}
+                    </h3>
+                    <p className="text-gray-600 mb-6">
+                      {service.partnerships.grundig.description}
+                    </p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900">Expertise Grundig :</h4>
+                    {service.partnerships.grundig.specialties.map((specialty, index) => (
+                      <div key={index} className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                        <span className="text-gray-700">{specialty}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
+                    <p className="text-sm text-blue-800 text-center">
+                      <strong>🎥 Vidéosurveillance Grundig</strong><br />
+                      Du résidentiel à l'industriel • Analytics IA • Stockage sécurisé
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <Card className="inline-block border-0 shadow-lg bg-gradient-to-r from-red-600 to-blue-600 text-white">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-bold mb-4">🛡️ Garantie partenaire officiel</h3>
+                  <p className="text-red-100 mb-6">
+                    Installation certifiée • Formation incluse • SAV direct constructeur
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button asChild size="lg" className="bg-white text-red-600 hover:bg-red-50">
+                      <Link to="/contact">
+                        Devis Ajax & Grundig
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                      <Link to="/zones-intervention">
+                        Zones d'intervention
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Testimonial specific to service */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
