@@ -26,6 +26,7 @@ const ServicesPage = () => {
         "Gestion chauffage et climatisation",
         "Volets roulants et stores automatiques", 
         "Arrosage automatique et jardins connectés",
+        "Robots tondeuses nouvelle génération (Mammotion, Hooki)",
         "Scénarios personnalisés selon usage",
         "Contrôle d'accès et interphonie",
         "Audio/vidéo multiroom",
