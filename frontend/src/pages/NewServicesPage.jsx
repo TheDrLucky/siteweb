@@ -276,63 +276,32 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="text-center border-0 shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-red-600" />
+              <CardContent className="p-8">
+                <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="w-10 h-10 text-red-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2">Ajax Systems</h3>
-                <p className="text-xs text-gray-600 mb-2">Certifié</p>
-                <div className="space-y-1">
-                  <Badge variant="outline" className="text-xs">Baseline</Badge>
-                  <Badge variant="outline" className="text-xs">Fibra</Badge>
-                  <Badge variant="outline" className="text-xs">Superior</Badge>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">Ajax Systems</h3>
+                <p className="text-sm text-gray-600 mb-4">Installateur certifié officiel</p>
+                <div className="space-y-2">
+                  <Badge variant="outline" className="mr-2">Baseline</Badge>
+                  <Badge variant="outline" className="mr-2">Fibra</Badge>
+                  <Badge variant="outline">Superior</Badge>
                 </div>
+                <p className="text-xs text-gray-500 mt-4">Formation et certification continue</p>
               </CardContent>
             </Card>
 
             <Card className="text-center border-0 shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Home className="w-8 h-8 text-blue-600" />
+              <CardContent className="p-8">
+                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Home className="w-10 h-10 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2">Control4</h3>
-                <p className="text-xs text-gray-600 mb-2">Certifié</p>
-                <Badge variant="outline" className="text-xs">Domotique</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Monitor className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2">Schneider Electric</h3>
-                <p className="text-xs text-gray-600 mb-2">Partenaire</p>
-                <Badge variant="outline" className="text-xs">Officiel</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2">Qualibat</h3>
-                <p className="text-xs text-gray-600 mb-2">Agréé</p>
-                <Badge variant="outline" className="text-xs">Assurance</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg bg-white">
-              <CardContent className="p-6">
-                <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-teal-600" />
-                </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-2">Formation</h3>
-                <p className="text-xs text-gray-600 mb-2">Continue</p>
-                <Badge variant="outline" className="text-xs">Mise à jour</Badge>
+                <h3 className="font-bold text-gray-900 text-lg mb-3">Control4</h3>
+                <p className="text-sm text-gray-600 mb-4">Intégrateur certifié domotique</p>
+                <Badge variant="outline">Domotique Premium</Badge>
+                <p className="text-xs text-gray-500 mt-4">Solutions haut de gamme</p>
               </CardContent>
             </Card>
           </div>
