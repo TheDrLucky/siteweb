@@ -132,8 +132,8 @@ const HomePage = () => {
 
           <div className="text-center mt-12">
             <Button asChild size="lg">
-              <Link to="/services">
-                Découvrir tous nos services
+              <Link to="/topologies">
+                Découvrir toutes nos solutions
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
