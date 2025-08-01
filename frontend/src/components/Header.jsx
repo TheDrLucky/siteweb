@@ -63,16 +63,69 @@ const Header = () => {
                   </Link>
                 </NavigationMenuLink>
 
-                <NavigationMenuLink asChild>
-                  <Link 
-                    to="/services" 
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
                   >
                     Nos Services
-                  </Link>
-                </NavigationMenuLink>
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-72 p-4">
+                      <div className="space-y-3">
+                        <Link
+                          to="/services"
+                          className="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors"
+                        >
+                          <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <Monitor className="w-4 h-4 text-blue-600" />
+                          </div>
+                          <div>
+                            <div className="font-medium text-gray-900">Tous nos services</div>
+                            <div className="text-sm text-gray-500">Vue d'ensemble complète</div>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/robot-tondeuse"
+                          className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors"
+                        >
+                          <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span className="text-green-600 text-lg">🤖</span>
+                          </div>
+                          <div>
+                            <div className="font-medium text-gray-900">Robot Tondeuse</div>
+                            <div className="text-sm text-gray-500">Entretien automatique pelouse</div>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/services/domotique"
+                          className="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors"
+                        >
+                          <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <Home className="w-4 h-4 text-blue-600" />
+                          </div>
+                          <div>
+                            <div className="font-medium text-gray-900">Domotique</div>
+                            <div className="text-sm text-gray-500">Maison connectée</div>
+                          </div>
+                        </Link>
+                        <Link
+                          to="/services/securite"
+                          className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 transition-colors"
+                        >
+                          <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                            <Shield className="w-4 h-4 text-red-600" />
+                          </div>
+                          <div>
+                            <div className="font-medium text-gray-900">Sécurité</div>
+                            <div className="text-sm text-gray-500">Alarmes & vidéosurveillance</div>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
 
                 <NavigationMenuLink asChild>
                   <Link 
