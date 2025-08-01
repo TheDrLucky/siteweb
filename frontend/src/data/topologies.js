@@ -61,8 +61,8 @@ export const topologieData = {
     residentiel: {
       id: "residentiel",
       title: "RÉSIDENTIEL",
-      subtitle: "Particuliers & Résidentiel",
-      description: "Que vous viviez en appartement ou dans une maison, nous équipons les résidences particulières avec des technologies adaptées à la vie de famille. Votre maison devient intelligente, confortable et sûre sans effort de votre part. Par exemple, nous pouvons automatiser l'éclairage et le chauffage de chaque pièce, installer des alarmes et caméras discrètes pour surveiller l'intérieur comme l'extérieur, intégrer un système audio multiroom pour la musique, ou encore motoriser votre portail et vos volets. De plus, nous prenons soin de vos espaces extérieurs : installation d'un arrosage automatique du jardin qui se déclenche aux meilleurs moments pour vos plantes, détection de mouvements pour éclairer l'allée à votre arrivée, etc. Nous proposons également des robots tondeuses de dernière génération (comme le Mammotion LUBA à navigation RTK ou le Hooki M1 à intelligence AI) pour entretenir votre pelouse de façon autonome. Fini la corvée de tonte et les frais d'entretien réguliers de jardin – votre gazon reste impeccable toute la saison, sans intervention humaine. En résumé, nos solutions domotiques résidentielles vous apportent confort, économies d'énergie et sécurité renforcée, tout en vous libérant du temps pour profiter de votre foyer.",
+      subtitle: "Solutions domotique pour particuliers",
+      description: "Maison intelligente et sécurisée. Automatisation complète de votre domicile pour plus de confort et sécurité.",
       icon: "Home",
       color: "blue",
       image: "/topologies/residentiel.jpg",
