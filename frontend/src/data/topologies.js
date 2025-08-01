@@ -590,6 +590,77 @@ export const topologieData = {
         "Déchetterie intercommunale - Surveillance automatisée",
         "Centre aquatique intercommunal - Domotique et sécurité"
       ]
+    },
+
+    agricole: {
+      id: "agricole",
+      title: "EXPLOITATION AGRICOLE",
+      subtitle: "Exploitations agricoles & milieu rural",
+      description: "En Bretagne et dans l'Ouest, le secteur agricole est très présent – et lui aussi peut tirer parti de la domotique et des nouvelles technologies. Godeloup Domotique propose aux agriculteurs et éleveurs des solutions pour des fermes connectées, alliant sécurité, automatisation des tâches et surveillance à distance : Sécurité des exploitations : nous installons des caméras robustes en extérieur pour surveiller la cour de ferme, les abords des hangars ou des serres, avec une vision nocturne pour repérer tout intrus la nuit. Couplées à des alarmes anti-intrusion adaptées (sirènes, projecteurs automatiques, alertes smartphone), ces mesures protègent votre matériel agricole onéreux et préviennent les vols de carburant, d'outils ou de bétail. Vous pouvez garder un œil sur vos installations à distance, ce qui est précieux pour les exploitations isolées. Automatisation des équipements agricoles : nous pouvons automatiser l'éclairage des étables et des hangars, afin qu'il s'allume aux heures de traite ou lors de vos passages, et s'éteigne quand ce n'est plus nécessaire, réduisant la consommation électrique. Des contrôles d'accès électroniques peuvent sécuriser l'entrée de dépôts de stock (engrais, pesticides) ou de salles de machines, avec des badges pour vos employés. Pour les cultures sous serre, nous proposons des capteurs de température, d'humidité et un système de pilotage du chauffage, de la ventilation ou de l'irrigation automatique en fonction des besoins de vos plantes, assurant un meilleur rendement et un suivi en temps réel depuis votre smartphone. Gestion facilitée du site : imaginez pouvoir ouvrir ou fermer à distance les portes de vos pâturages ou de votre poulailler depuis votre téléphone, ou être averti immédiatement si une pompe d'irrigation tombe en panne. Avec nos solutions connectées, c'est possible. Nous déployons également des robots tondeuses pour grandes superficies qui peuvent entretenir les pelouses autour de la ferme ou les abords d'un centre équestre, sans intervention manuelle, ce qui vous fait gagner du temps pendant les saisons chargées. Suivi et optimisation : tous ces systèmes peuvent être centralisés sur un tableau de bord agricole : vous y consultez par exemple les niveaux de vos silos mesurés par des capteurs, la consommation électrique de votre laiterie, ou encore la position de vos tracteurs équipés de trackers GPS. L'analyse des données collectées vous aide à optimiser votre activité (par exemple, ajuster l'éclairage de la serre pour économiser de l'énergie sans impacter la croissance des plants). En adoptant ces technologies, votre exploitation gagne en sécurité (sites sous surveillance constante, dissuasion des intrusions), en efficacité (tâches automatisées, moins de perte de temps sur des actions répétitives) et en sérénité (vous pouvez surveiller et agir sur votre ferme même en votre absence). Le milieu rural aussi a droit à sa transition numérique – nous sommes là pour la mettre en œuvre avec des solutions simples d'utilisation, robustes et éprouvées.",
+      icon: "Tractor",
+      color: "amber",
+      image: "/topologies/agricole.jpg",
+      
+      solutions: [
+        {
+          category: "Sécurité Exploitations",
+          services: [
+            "Vidéosurveillance robuste extérieur",
+            "Vision nocturne zones de stock",
+            "Alarmes anti-intrusion adaptées (sirènes, projecteurs)",
+            "Protection matériel agricole onéreux",
+            "Prévention vols carburant/outils/bétail",
+            "Surveillance à distance exploitations isolées"
+          ]
+        },
+        {
+          category: "Automatisation Agricole",
+          services: [
+            "Éclairage automatique étables et hangars",
+            "Contrôles d'accès électroniques dépôts",
+            "Capteurs température/humidité serres",
+            "Pilotage chauffage/ventilation/irrigation automatique",
+            "Suivi temps réel depuis smartphone",
+            "Badges sécurisés pour employés"
+          ]
+        },
+        {
+          category: "Gestion Facilitée",
+          services: [
+            "Ouverture/fermeture à distance pâturages",
+            "Contrôle poulailler télécommandé",
+            "Alertes pannes pompes irrigation",
+            "Robots tondeuses grandes superficies",
+            "Entretien automatisé centres équestres",
+            "Gestion sans intervention manuelle"
+          ]
+        },
+        {
+          category: "Suivi et Optimisation",
+          services: [
+            "Tableau de bord agricole centralisé",
+            "Capteurs niveaux silos",
+            "Monitoring consommation électrique laiterie",
+            "Trackers GPS tracteurs",
+            "Analyse données optimisation activité",
+            "Ajustement éclairage serres intelligent"
+          ]
+        }
+      ],
+      
+      avantages: [
+        "Sécurité sites sous surveillance constante",
+        "Efficacité par automatisation des tâches",
+        "Sérénité surveillance à distance",
+        "Réduction temps actions répétitives",
+        "Solutions robustes et éprouvées"
+      ],
+      
+      exemples: [
+        "Exploitation laitière Vitré - Surveillance et automatisation",
+        "Serres maraîchères Châteaubourg - Pilotage climatique",
+        "Élevage bovin Liffré - Sécurité et contrôle d'accès"
+      ]
     }
   }
 };
