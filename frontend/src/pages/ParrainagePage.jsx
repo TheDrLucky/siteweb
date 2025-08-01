@@ -162,7 +162,7 @@ const ParrainagePage = () => {
                       <Euro className="w-8 h-8 inline mr-1" />
                       {offer.reward}
                     </div>
-                    <p className="text-sm text-gray-500">Bon d'achat pour vous</p>
+                    <p className="text-sm text-gray-500">Carte-cadeau pour vous</p>
                   </div>
 
                   <div className="mb-6 p-4 bg-white rounded-lg">
