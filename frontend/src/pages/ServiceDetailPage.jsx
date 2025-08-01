@@ -1,18 +1,44 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useLocation, Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '../components/ui/accordion';
 import { 
   Home, Shield, Monitor, Brain, 
   CheckCircle, Phone, ArrowLeft,
-  Clock, Award, Users
+  Clock, Award, Users, Scissors
 } from 'lucide-react';
+import { servicesData } from '../data/mockServices';
 import { mockData } from '../data/mock';
 
 const ServiceDetailPage = () => {
   const { serviceId } = useParams();
-  const service = mockData.services.find(s => s.id === serviceId);
+  const location = useLocation();
+  
+  // Redirection robot-tondeuse vers domotique
+  const isRobotTondeuse = location.pathname === '/robot-tondeuse' || serviceId === 'robot-tondeuse';
+  const actualServiceId = isRobotTondeuse ? 'domotique' : serviceId;
+  
+  const service = servicesData[actualServiceId];
+  const mockService = mockData.services.find(s => s.id === actualServiceId);
+
+  useEffect(() => {
+    if (isRobotTondeuse) {
+      // Scroll vers la section robot tondeuse après le chargement
+      setTimeout(() => {
+        const robotSection = document.getElementById('robot-tondeuse-section');
+        if (robotSection) {
+          robotSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  }, [isRobotTondeuse]);
 
   if (!service) {
     return (
