@@ -26,7 +26,7 @@ const ParrainagePage = () => {
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              <strong>Recommandez-nous à vos proches</strong> et recevez un bon d'achat pour chaque nouveau client. 
+              <strong>Recommandez-nous à vos proches</strong> et recevez une carte-cadeau électronique pour chaque nouveau client. 
               Vos amis bénéficient aussi d'un avantage spécial !
             </p>
 
