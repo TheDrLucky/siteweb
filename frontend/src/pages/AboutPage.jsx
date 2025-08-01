@@ -121,28 +121,36 @@ const AboutPage = () => {
               Nos valeurs
             </h2>
             <p className="text-lg text-gray-600">
-              Ce qui guide notre approche et notre relation avec nos clients.
+              Nos valeurs s'articulent autour de l'excellence technique, du service personnalisé et de la proximité. 
+              Nous privilégions une approche artisanale où chaque installation est réalisée avec soin, dans le respect 
+              des normes et avec un souci constant de la qualité.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: Heart,
-                title: "Approche personnalisée",
-                description: "Chaque projet est unique. Nous prenons le temps de comprendre vos besoins spécifiques pour vous proposer la solution la mieux adaptée.",
-                color: "red"
-              },
-              {
                 icon: Award,
-                title: "Qualité artisanale",
-                description: "Un savoir-faire technique allié à la finition soignée. Nos installations respectent les normes et sont réalisées dans les règles de l'art.",
+                title: "Expertise Technique",
+                description: "Une équipe de spécialistes certifiés dans tous nos domaines d'intervention.",
                 color: "blue"
               },
               {
+                icon: Heart,
+                title: "Service Personnalisé",
+                description: "Chaque projet est unique, nous adaptons nos solutions à vos besoins spécifiques.",
+                color: "red"
+              },
+              {
+                icon: Zap,
+                title: "Qualité Artisanale",
+                description: "Installations soignées et finitions impeccables, dans le respect des normes.",
+                color: "yellow"
+              },
+              {
                 icon: Users,
-                title: "Service de proximité",
-                description: "Basés en Bretagne, nous intervenons rapidement sur tout le Grand Ouest. Un interlocuteur unique pour tous vos projets technologiques.",
+                title: "Proximité Régionale",
+                description: "Basés en Bretagne, nous intervenons rapidement dans tout le Grand Ouest.",
                 color: "green"
               }
             ].map((value, index) => (
@@ -150,11 +158,13 @@ const AboutPage = () => {
                 <CardContent className="p-8">
                   <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 ${
                     value.color === 'red' ? 'bg-red-100' : 
-                    value.color === 'blue' ? 'bg-blue-100' : 'bg-green-100'
+                    value.color === 'blue' ? 'bg-blue-100' : 
+                    value.color === 'yellow' ? 'bg-yellow-100' : 'bg-green-100'
                   }`}>
                     <value.icon className={`w-8 h-8 ${
                       value.color === 'red' ? 'text-red-600' : 
-                      value.color === 'blue' ? 'text-blue-600' : 'text-green-600'
+                      value.color === 'blue' ? 'text-blue-600' : 
+                      value.color === 'yellow' ? 'text-yellow-600' : 'text-green-600'
                     }`} />
                   </div>
                   
