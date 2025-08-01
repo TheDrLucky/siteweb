@@ -146,84 +146,16 @@ const Header = () => {
               Accueil
             </Link>
 
-            {/* Services Mobile */}
-            <div className="space-y-1">
-              <div className="px-3 py-2 text-base font-medium text-gray-700 flex items-center justify-between">
-                Services
-                <ChevronDown className="w-4 h-4" />
-              </div>
-              
-              {/* Domotique Mobile */}
-              <div className="pl-4 space-y-1">
-                <div className="px-3 py-1 text-sm font-medium text-gray-800">🏠 Domotique</div>
-                <Link
-                  to="/domotique/bureau-etudes-domotique"
-                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bureau d'études
-                </Link>
-                {seoPages.domotique.solutions.slice(0, 2).map((solution) => (
-                  <Link
-                    key={solution.slug}
-                    to={`/domotique/${solution.slug}`}
-                    className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {solution.title}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Sécurité Mobile */}
-              <div className="pl-4 space-y-1">
-                <div className="px-3 py-1 text-sm font-medium text-gray-800">🛡️ Sécurité</div>
-                <Link
-                  to="/securite/bureau-etudes-securite"
-                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bureau d'études
-                </Link>
-                <Link
-                  to="/securite/grundig-securite"
-                  className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Grundig Sécurité
-                </Link>
-              </div>
-
-              {/* Informatique & IA Mobile */}
-              <div className="pl-4 space-y-1">
-                <div className="px-3 py-1 text-sm font-medium text-gray-800">💻 Informatique</div>
-                <Link
-                  to="/informatique/bureau-etudes-informatique"
-                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bureau d'études
-                </Link>
-              </div>
-
-              <div className="pl-4 space-y-1">
-                <div className="px-3 py-1 text-sm font-medium text-gray-800">🤖 Intelligence IA</div>
-                <Link
-                  to="/ia/bureau-etudes-ia"
-                  className="block px-6 py-1 rounded-md text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bureau d'études
-                </Link>
-                <Link
-                  to="/ia/limova-intelligence-artificielle"
-                  className="block px-6 py-1 rounded-md text-xs text-gray-500 hover:text-blue-600 hover:bg-blue-50"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Limova IA
-                </Link>
-              </div>
-            </div>
+            {/* Topologies Link */}
+            <Link
+              to="/topologies"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Nos Solutions
+            </Link>
 
             <Link
               to="/boutique"
