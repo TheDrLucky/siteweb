@@ -6,7 +6,9 @@ import { Badge } from '../components/ui/badge';
 import { 
   Home, Shield, Monitor, Brain, 
   ArrowRight, Star, CheckCircle,
-  Phone, Users, Award, MapPin
+  Phone, Users, Award, MapPin,
+  Briefcase, Building2, ShoppingBag, UtensilsCrossed, 
+  Heart, Tent, Building
 } from 'lucide-react';
 import { mockData } from '../data/mock';
 import { topologieData } from '../data/topologies';
