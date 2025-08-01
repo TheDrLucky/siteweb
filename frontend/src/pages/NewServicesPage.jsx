@@ -374,6 +374,116 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* Robot Tondeuse Dedicated Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Card className="overflow-hidden border-0 shadow-xl">
+            <CardContent className="p-0">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="p-12 bg-gradient-to-br from-green-600 to-green-700 text-white">
+                  <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+                    🤖 Solution robotique autonome
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Robot Tondeuse Connecté
+                  </h2>
+                  <p className="text-lg text-green-100 mb-8 leading-relaxed">
+                    <strong>Spécialité Godeloup Domotique :</strong> robots tondeuses de dernière génération 
+                    avec navigation RTK et intelligence artificielle. Fini la corvée de tonte !
+                  </p>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-200" />
+                      <span className="text-green-100">Navigation RTK haute précision</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-200" />
+                      <span className="text-green-100">Tonte autonome 24h/24 et 7j/7</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-200" />
+                      <span className="text-green-100">Mulching naturel pour pelouse plus dense</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-200" />
+                      <span className="text-green-100">Contrôle à distance via smartphone</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+                      <Link to="/robot-tondeuse">
+                        <span className="mr-2">🤖</span>
+                        Découvrir nos robots
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                      <Link to="/contact">
+                        Devis gratuit
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="p-12 bg-white">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-8">
+                    Modèles disponibles
+                  </h3>
+                  
+                  <div className="space-y-6">
+                    <Card className="border-2 border-green-100 hover:border-green-200 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">🤖</span>
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-lg font-bold text-gray-900 mb-2">Mammotion LUBA</h4>
+                            <p className="text-gray-600 mb-3">Navigation RTK professionnelle jusqu'à 5000m²</p>
+                            <div className="flex flex-wrap gap-2">
+                              <Badge variant="secondary" className="text-xs">Sans câble</Badge>
+                              <Badge variant="secondary" className="text-xs">Précision cm</Badge>
+                              <Badge variant="secondary" className="text-xs">Grandes surfaces</Badge>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    <Card className="border-2 border-green-100 hover:border-green-200 transition-colors">
+                      <CardContent className="p-6">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span className="text-2xl">🤖</span>
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="text-lg font-bold text-gray-900 mb-2">Hooki M1</h4>
+                            <p className="text-gray-600 mb-3">Intelligence artificielle embarquée jusqu'à 3000m²</p>
+                            <div className="flex flex-wrap gap-2">
+                              <Badge variant="secondary" className="text-xs">IA adaptive</Badge>
+                              <Badge variant="secondary" className="text-xs">Installation simple</Badge>
+                              <Badge variant="secondary" className="text-xs">Résidentiel</Badge>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="mt-8 p-4 bg-green-50 rounded-lg">
+                    <p className="text-sm text-green-800 text-center">
+                      <strong>Installation et configuration incluses</strong><br />
+                      Formation à l'utilisation • SAV local garanti
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
