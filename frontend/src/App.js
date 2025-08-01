@@ -46,6 +46,8 @@ function App() {
             <Route path="/limova/agents/:agentId" element={<AgentPage />} />
             <Route path="/boutique" element={<BoutiquePage />} />
             <Route path="/parrainage" element={<ParrainagePage />} />
+            <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialitePage />} />
             <Route path="/topologies" element={<TopologiesPage />} />
             <Route path="/topologies/:topologyId" element={<TopologyDetailPage />} />
             <Route path="/contact" element={<ContactPage />} />
