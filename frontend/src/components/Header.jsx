@@ -179,15 +179,15 @@ const Header = () => {
               Nos Services
             </Link>
 
-            {/* Robot Tondeuse Link */}
+            {/* Zones d'intervention Link */}
             <Link
-              to="/robot-tondeuse"
-              className={`flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                isActive('/robot-tondeuse') ? 'text-green-600 bg-green-50' : 'text-gray-700 hover:text-green-600 hover:bg-green-50'
+              to="/zones-intervention"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              🤖 Robot Tondeuse
+              Zones d'intervention
             </Link>
 
             {/* Topologies Link */}
