@@ -51,7 +51,7 @@ const ServicesPage = () => {
       icon: "Shield",
       color: "red",
       technologies: [
-        "Alarmes anti-intrusion Ajax Systems",
+        "Alarmes anti-intrusion Ajax Systems (Baseline/Fibra/Superior)",
         "Vidéosurveillance Grundig haute définition",
         "Contrôle d'accès biométrique et badges",
         "Détection technique (fumée, gaz, inondation)",
