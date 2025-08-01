@@ -286,34 +286,30 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité CHR",
+          category: "🛡️ Sécurité CHR",
           services: [
             "Vidéosurveillance cuisine et salle",
             "Alarme anti-intrusion restaurant",
             "Contrôle d'accès personnel",
-            "Coffre-fort recettes connecté", 
-            "Détection gaz cuisine professionnelle",
-            "Télésurveillance 24h/24"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Confort Client",
+          category: "✨ Confort Client",
           services: [
             "Éclairage d'ambiance restaurant",
             "Climatisation zones individualisées",
             "Sonorisation restaurant/bar",
-            "Écrans affichage menu dynamique",
-            "Wi-Fi client haut débit"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Gestion Hôtelière",
+          category: "🏨 Gestion Hôtelière",
           services: [
             "Contrôle d'accès chambres (badges)",
             "Domotique chambres (éclairage, température)",
             "Interphone et portier vidéo",
-            "Gestion centralisée bâtiment",
-            "Système de réservation connecté"
+            "+ 2 autres services"
           ]
         }
       ],
@@ -322,14 +318,12 @@ export const topologieData = {
         "Sécurité clients et personnel assurée",
         "Ambiance et confort optimisés",
         "Gestion énergétique automatisée",
-        "Surveillance cuisine (HACCP)",
-        "Expérience client améliorée"
+        "Expérience client haut de gamme"
       ],
       
       exemples: [
-        "Restaurant Vitré - Sécurité et ambiance complète",
-        "Hôtel Châteaubourg - Domotique chambres",
-        "Bar Liffré - Sonorisation et vidéosurveillance"
+        "Restaurant Vitré - Sécurité et ambiance",
+        "Hôtel Châteaubourg - Domotique chambres"
       ]
     },
 
