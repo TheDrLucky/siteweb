@@ -234,50 +234,44 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité Commerce",
+          category: "🛡️ Sécurité Commerce",
           services: [
             "Vidéosurveillance anti-vol HD",
             "Alarme anti-intrusion silencieuse",
             "Portiques antivol électroniques",
-            "Coffre-fort connecté",
-            "Télésurveillance commerçant",
-            "Système anti-hold-up"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Confort Client",
+          category: "✨ Confort Client",
           services: [
             "Éclairage showcase automatique",
-            "Climatisation intelligente zones",
+            "Climatisation zones intelligente",
             "Musique d'ambiance multiroom",
-            "Accueil client automatisé",
-            "Comptage de passage clients"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Gestion Énergétique",
+          category: "⚡ Gestion Énergétique",
           services: [
             "Éclairage LED basse consommation",
             "Gestion automatique chauffage/clim",
             "Monitoring consommation temps réel",
-            "Programmation horaires d'ouverture",
-            "Optimisation facture énergétique"
+            "+ 2 autres services"
           ]
         }
       ],
       
       avantages: [
-        "Réduction des vols et démarque",
+        "Réduction vols et démarque",
         "Ambiance commerciale optimisée",
         "Économies d'énergie substantielles",
-        "Tranquillité d'esprit totale",
-        "Image moderne et professionnelle"
+        "Satisfaction client renforcée"
       ],
       
       exemples: [
         "Boulangerie Vitré - Sécurité et éclairage",
-        "Pharmacie Châteaubourg - Vidéosurveillance complète",
-        "Magasin de vêtements Liffré - Anti-vol et ambiance"
+        "Pharmacie Châteaubourg - Vidéosurveillance"
       ]
     },
 
