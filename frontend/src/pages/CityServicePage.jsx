@@ -246,35 +246,57 @@ const CityServicePage = () => {
         </div>
       </section>
 
-      {/* Fonctionnalités détaillées */}
+      {/* Fonctionnalités principales */}
       {detailedServiceInfo?.features && (
-        <section className="py-20 bg-gray-50">
+        <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Nos solutions {serviceInfo.name.toLowerCase()} à {cityInfo.name}
               </h2>
               <p className="text-lg text-gray-600">
-                Des équipements de qualité professionnelle pour votre domicile ou entreprise.
+                Des équipements de qualité professionnelle pour vos besoins spécifiques.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {detailedServiceInfo.features.map((feature, index) => (
-                <Card key={index} className="border-0 shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {detailedServiceInfo.features.slice(0, 6).map((feature, index) => (
+                <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                         <CheckCircle className="w-5 h-5 text-blue-600" />
                       </div>
                       <div>
-                        <p className="text-gray-700 leading-relaxed">{feature}</p>
+                        <p className="text-gray-700 text-sm leading-relaxed">{feature}</p>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
               ))}
             </div>
+
+            {detailedServiceInfo.features.length > 6 && (
+              <div className="text-center mt-8">
+                <Accordion type="single" collapsible className="max-w-4xl mx-auto">
+                  <AccordionItem value="more-features">
+                    <AccordionTrigger className="text-center justify-center">
+                      <span className="font-semibold">Voir toutes les fonctionnalités ({detailedServiceInfo.features.length - 6} de plus)</span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        {detailedServiceInfo.features.slice(6).map((feature, index) => (
+                          <div key={index} className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm">
+                            <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
+                            <span className="text-sm text-gray-700">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              </div>
+            )}
           </div>
         </section>
       )}
