@@ -244,6 +244,65 @@ const ServiceDetailPage = () => {
         </div>
       </section>
 
+      {/* Section Robot Tondeuse spéciale si redirection */}
+      {isRobotTondeuse && service.robotTondeuse && (
+        <section id="robot-tondeuse-section" className="py-20 bg-green-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Nos robots tondeuses connectés
+              </h2>
+              <p className="text-lg text-gray-600">
+                Des solutions robotiques intelligentes pour un entretien parfait de votre pelouse.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {service.robotTondeuse.models.map((model, index) => (
+                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                  <CardContent className="p-8">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <Scissors className="w-8 h-8 text-green-600" />
+                      </div>
+                      
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                        {model.name}
+                      </h3>
+                      
+                      <p className="text-gray-600 mb-6">{model.description}</p>
+                      
+                      <div className="space-y-3">
+                        {model.features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-center justify-center space-x-3">
+                            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                            <span className="text-gray-700">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                Avantages de nos robots tondeuses
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {service.robotTondeuse.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Testimonial specific to service */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
