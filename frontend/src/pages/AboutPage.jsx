@@ -187,10 +187,12 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Une présence locale, un service complet
+              Zone d'intervention
             </h2>
             <p className="text-lg text-gray-600">
-              Quel que soit votre projet, Godeloup Domotique vous accompagne de A à Z.
+              Basés à Vitré en Ille-et-Vilaine, nous intervenons dans un rayon de 50 km autour de notre siège social. 
+              Cette proximité géographique nous permet d'assurer un service réactif, que ce soit pour les interventions 
+              d'urgence, la maintenance ou le suivi de vos installations.
             </p>
           </div>
 
@@ -202,8 +204,9 @@ const AboutPage = () => {
               
               <div className="space-y-4 text-gray-700">
                 <p>
-                  <strong>Basée en Ille-et-Vilaine</strong>, nous intervenons rapidement sur tout le Grand Ouest 
-                  (Bretagne, Pays de la Loire, Normandie) pour une étude sur site, une installation ou un dépannage.
+                  Notre zone d'intervention principale couvre les départements de l'<strong>Ille-et-Vilaine (35)</strong>, 
+                  de la <strong>Mayenne (53)</strong> et les zones limitrophes des Côtes-d'Armor (22) et de la 
+                  Loire-Atlantique (44).
                 </p>
                 
                 <p>
@@ -220,8 +223,8 @@ const AboutPage = () => {
               <div className="mt-8 space-y-4">
                 {[
                   "Interlocuteur unique pour tous vos projets",
-                  "Installations certifiées (Ajax, Control4, etc.)",
-                  "Finitions soignées et normes respectées",
+                  "Installations certifiées (Ajax Baseline/Fibra/Superior, Control4)",
+                  "Partenaire Grundig Security",
                   "Formation et SAV inclus"
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-3">
