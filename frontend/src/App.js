@@ -10,7 +10,7 @@ import ChatBot from "./components/ChatBot";
 
 // Import pages
 import HomePage from "./pages/HomePage";
-import ServicesPage from "./pages/ServicesPage";
+import ServicesPage from "./pages/NewServicesPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
 import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
