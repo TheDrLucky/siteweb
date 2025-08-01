@@ -503,6 +503,7 @@ export const topologieData = {
             "Automatisation gymnases et salles",
             "Gestion éclairage public (LED)",
             "Arrosage automatique espaces verts",
+            "Robots tondeuses pour parcs municipaux",
             "Sonorisation événements publics"
           ]
         },
