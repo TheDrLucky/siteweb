@@ -454,6 +454,7 @@ export const topologieData = {
             "Gestion éclairage public camping",
             "Monitoring consommations énergétiques",
             "Contrôle pompes et traitement piscine",
+            "Robots tondeuses pour grandes surfaces (Mammotion)",
             "Gestion centralisée multi-bâtiments"
           ]
         }
