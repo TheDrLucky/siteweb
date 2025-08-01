@@ -76,12 +76,12 @@ const Header = () => {
 
                 <NavigationMenuLink asChild>
                   <Link 
-                    to="/robot-tondeuse" 
-                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-green-600 hover:bg-green-50 ${
-                      isActive('/robot-tondeuse') ? 'text-green-600 bg-green-50' : 'text-gray-700'
+                    to="/zones-intervention" 
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
+                      isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
                   >
-                    🤖 Robot Tondeuse
+                    Zones d'intervention
                   </Link>
                 </NavigationMenuLink>
 
