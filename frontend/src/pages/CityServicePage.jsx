@@ -301,35 +301,10 @@ const CityServicePage = () => {
         </section>
       )}
 
-      {/* Zones d'intervention */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Zones d'intervention à {cityInfo.name}
-            </h2>
-            <p className="text-lg text-gray-600">
-              Nous intervenons sur l'ensemble de la commune et ses alentours.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {cityInfo.zones.map((zone, index) => (
-              <Card key={index} className="text-center border-0 shadow-md">
-                <CardContent className="p-6">
-                  <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                  <h3 className="font-semibold text-gray-900">{zone}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Autres services */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Nos autres services à {cityInfo.name}
             </h2>
