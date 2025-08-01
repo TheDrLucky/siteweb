@@ -31,85 +31,85 @@ export const mockData = {
     {
       id: "domotique",
       title: "Domotique",
-      subtitle: "Maison connectée et intelligente",
-      description: "Transformez votre habitat en maison intelligente avec nos solutions domotiques sur-mesure. Contrôle centralisé, économies d'énergie et confort optimal.",
-      icon: "Home",
+      subtitle: "Maison connectée et automatisation",
+      description: "La domotique vise à rendre votre habitat plus confortable, éco-énergétique et facile à piloter. Godeloup Domotique transforme votre maison ou bâtiment en espace intelligent grâce à des solutions sur-mesure.",
+      icon: "home",
       color: "blue",
       features: [
-        "Éclairage intelligent et automatisation",
-        "Contrôle de la température et climatisation",
-        "Gestion des volets et stores automatiques",
-        "Système audio et vidéo multiroom",
-        "Sécurité intégrée et alarmes connectées"
+        "Éclairage intelligent qui s'adapte à la luminosité et à votre présence",
+        "Thermostats connectés et gestion du chauffage/climatisation pièce par pièce pour réaliser jusqu'à 30% d'économies d'énergie",
+        "Volets roulants et stores automatiques synchronisés avec le lever/coucher du soleil ou contrôlables à distance",
+        "Systèmes audio/vidéo multiroom pour diffuser votre musique et gérer le home-cinéma dans toute la maison",
+        "Appareils électroménagers connectés et scénarios de vie (mode réveil, départ, coucher…) qui simplifient votre quotidien"
       ],
       benefits: [
-        "Réduction jusqu'à 30% de votre consommation énergétique",
-        "Confort et simplicité d'utilisation",
-        "Valorisation de votre bien immobilier",
-        "Contrôle à distance via smartphone"
+        "Contrôlez l'ensemble de votre maison depuis votre smartphone ou via des assistants vocaux",
+        "Gagnez en confort de vie et simplicité d'utilisation",
+        "Valorisez votre bien immobilier grâce à une installation domotique moderne",
+        "Jusqu'à 30% d'économies d'énergie"
       ]
     },
     {
       id: "securite",
       title: "Sécurité",
-      subtitle: "Protection avancée 24h/24",
-      description: "Protégez votre domicile ou entreprise avec nos systèmes de sécurité de pointe : alarmes, vidéosurveillance et contrôle d'accès pour une sérénité totale.",
-      icon: "Shield",
+      subtitle: "Alarmes et vidéosurveillance",
+      description: "Protégez votre domicile ou votre entreprise 24h/24 grâce à nos solutions de sécurité de pointe. Nous installons des systèmes complets pour assurer votre sérénité.",
+      icon: "shield",
       color: "red",
       features: [
-        "Alarmes anti-intrusion intelligentes",
-        "Vidéosurveillance HD avec vision nocturne",
-        "Contrôle d'accès biométrique",
-        "Détecteurs de fumée et gaz connectés",
-        "Télésurveillance professionnelle"
+        "Alarmes anti-intrusion intelligentes capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle",
+        "Vidéosurveillance HD avec caméras haute définition (vision nocturne, détection de mouvement) pour surveiller vos entrées, jardins, parkings en temps réel depuis une application mobile",
+        "Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles",
+        "Détecteurs de fumée, de gaz et d'inondation connectés pour vous alerter au moindre danger domestique ou industriel",
+        "Interphones vidéo et portiers connectés pour identifier vos visiteurs à distance et ouvrir portes ou portails depuis votre smartphone"
       ],
       benefits: [
-        "Protection 24h/24, 7j/7",
-        "Réduction des primes d'assurance",
-        "Intervention rapide en cas d'alerte",
-        "Tranquillité d'esprit absolue"
+        "Protection de vos proches, employés et biens",
+        "Tranquillité d'esprit absolue 24h/24",
+        "Réduction potentielle de vos primes d'assurance",
+        "Environnement sécurisé en permanence"
       ]
     },
     {
       id: "informatique",
       title: "Informatique",
       subtitle: "Solutions IT professionnelles",
-      description: "Optimisez votre infrastructure informatique avec nos services experts : réseaux, serveurs NAS, sécurité des données et maintenance préventive.",
-      icon: "Monitor",
+      description: "Nous mettons également à profit nos compétences en informatique pour optimiser vos infrastructures numériques. Que ce soit pour un usage domestique avancé ou pour une PME.",
+      icon: "monitor",
       color: "green",
       features: [
-        "Installation et configuration de réseaux",
-        "Serveurs NAS et sauvegarde de données",
-        "Sécurisation informatique et antivirus",
-        "Maintenance et dépannage PC/Mac",
-        "Solutions Cloud et télétravail"
+        "Réseaux informatiques fiables et Wi-Fi professionnel : installation de routeurs, switchs et bornes Wi-Fi performants pour une couverture optimale",
+        "Serveurs NAS et solutions de sauvegarde : centralisation de vos données, serveurs de stockage en réseau et stratégies de sauvegarde automatique",
+        "Sécurité informatique : pare-feux (firewall), antivirus gérés, VPN d'entreprise, audit de vulnérabilité pour protéger vos données",
+        "Maintenance et support : maintenance préventive, dépannage rapide sur site ou à distance, mise à jour de logiciels",
+        "Solutions Cloud et télétravail : outils collaboratifs en ligne, connexions sécurisées pour le travail à distance"
       ],
       benefits: [
-        "Amélioration de la productivité",
-        "Sécurité renforcée des données",
-        "Réduction des pannes et temps d'arrêt",
-        "Support technique réactif"
+        "Productivité augmentée",
+        "Risques de panne réduits",
+        "Support technique réactif",
+        "Système d'information robuste et évolutif"
       ]
     },
     {
-      id: "intelligence-artificielle",
+      id: "ia",
       title: "Intelligence Artificielle",
-      subtitle: "L'IA au service de votre activité",
-      description: "Intégrez l'intelligence artificielle dans votre quotidien professionnel avec nos solutions Limova : chatbots, assistants virtuels et automatisation intelligente.",
-      icon: "Brain",
+      subtitle: "Assistants virtuels et automatisation IA",
+      description: "L'intelligence artificielle est le nouvel atout pour booster votre activité et votre relation client. Grâce à notre solution Godeloup Domotique IA – une solution d'IA conversationnelle de nouvelle génération en marque blanche.",
+      icon: "brain",
       color: "purple",
       features: [
-        "Chatbots intelligents personnalisés",
-        "Assistants virtuels métier",
-        "Automatisation des processus",
-        "Analyse prédictive de données",
-        "Formation et accompagnement IA"
+        "Chatbots intelligents : des agents virtuels capables de dialoguer naturellement avec vos clients sur votre site web ou vos réseaux sociaux",
+        "Assistants vocaux personnalisés : déploiement d'assistants vocaux sur vos équipements connectés ou bornes d'accueil",
+        "Automatisation des processus : utilisation de l'IA pour traiter plus rapidement certaines tâches répétitives",
+        "Analyse prédictive : outils d'IA capables d'anticiper les pannes (maintenance prédictive) ou de mieux comprendre le comportement de vos clients",
+        "Formation et accompagnement : formation à l'utilisation et suivi pour améliorer en continu les performances de vos agents virtuels"
       ],
       benefits: [
-        "Automatisation des tâches répétitives",
-        "Amélioration de l'expérience client",
-        "Optimisation des processus métier",
-        "Avantage concurrentiel durable"
+        "Expérience innovante pour vos clients",
+        "Efficacité interne améliorée",
+        "Avantage concurrentiel durable",
+        "Solution en marque blanche personnalisable"
       ]
     }
   ],
