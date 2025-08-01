@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Réorganisation du site web Godeloup Domotique pour améliorer la hiérarchisation des pages, clarifier que c'est une entreprise de prestation (pas un blog), et intégrer une boutique avec prix transparents au lieu d'expliquer les prix sur les pages de service. L'utilisateur veut que chaque page soit claire sur les prestations offertes et avoir des liens vers une boutique avec des offres comme 'Pack essentiel domotique 499€', 'Volet connecté 79€', etc."
+user_problem_statement: "Intégration du contenu détaillé fourni par l'utilisateur dans toutes les pages existantes, puis création de pages SEO par ville-service pour améliorer le référencement local sur les villes de : Vitré, Châteaubourg, Fougères, Rennes, Laval et La Guerche-de-Bretagne."
 
 frontend:
   - task: "Création page boutique principale"
