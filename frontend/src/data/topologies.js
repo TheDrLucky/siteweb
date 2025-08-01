@@ -303,8 +303,8 @@ export const topologieData = {
     restaurant: {
       id: "restaurant",
       title: "RESTAURANT / HÔTEL",
-      subtitle: "Hôtels & Restaurants (CHR)",
-      description: "Dans le secteur de l'hôtellerie et de la restauration (Cafés, Hôtels, Restaurants), il est crucial d'allier sécurité, confort client et efficacité opérationnelle. Godeloup Domotique propose des solutions sur-mesure pour les établissements CHR : Surveillance et alarmes : vidéosurveillance des zones sensibles (salles, cuisines, réserves) pour prévenir les vols ou surveiller le respect des normes HACCP en cuisine, alarmes anti-intrusion discrètes pour protéger le restaurant en dehors des heures d'ouverture, et détecteurs de fumée/gaz connectés pour une sécurité incendie maximale. Confort et expérience client : éclairage d'ambiance modulable dans la salle de restaurant ou le hall d'hôtel, sonorisation adaptée (musique d'ambiance douce aux heures de repas), et wifi haut débit gratuit pour les clients. Dans les hôtels, nous installons des systèmes domotiques dans les chambres : contrôle centralisé de l'éclairage, des volets et de la température par le client, accès aux chambres par carte/badge ou code, offrant une expérience moderne et haut de gamme à vos résidents. Gestion centralisée pour les gérants : depuis une interface unique, vous pouvez superviser tout votre établissement – vérifier l'état de chaque alarme, ajuster les thermostats des chambres inoccupées, contrôler l'ouverture/fermeture des accès ou encore consulter les consommations énergétiques en temps réel. Grâce à ces installations, un hôtel ou restaurant gagne en sécurité pour son personnel et sa clientèle, réalise des économies d'énergie, et offre une expérience client améliorée qui se traduira par de meilleurs avis et une fidélisation accrue.",
+      subtitle: "Solutions CHR professionnelles",
+      description: "Sécurité, confort client et gestion hôtelière. Technologies sur-mesure pour restaurants, bars et hôtels.",
       icon: "UtensilsCrossed",
       color: "red",
       image: "/topologies/restaurant.jpg",
