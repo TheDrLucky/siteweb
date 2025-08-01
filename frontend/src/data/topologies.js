@@ -182,50 +182,44 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité Industrielle",
+          category: "🏭 Sécurité Industrielle",
           services: [
-            "Vidéosurveillance périmétrique haute sécurité",
+            "Vidéosurveillance périmétrique HD",
             "Contrôle d'accès multi-niveaux",
             "Alarme anti-intrusion industrielle",
-            "Détection technique (fumée, gaz, inondation)",
-            "Télésurveillance avec intervention rapide",
-            "Système de badges et pointeuses"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Automation Industrielle",
+          category: "⚙️ Automation Industrielle",
           services: [
             "Éclairage industriel intelligent",
-            "Gestion CVC (Climatisation/Ventilation/Chauffage)",
-            "Automatisation des accès véhicules",
-            "Monitoring énergétique avancé",
-            "Scénarios de production optimisés"
+            "Gestion CVC centralisée",
+            "Automatisation accès véhicules",
+            "+ 2 autres services"
           ]
         },
         {
-          category: "IT & Réseaux",
+          category: "💻 IT & Réseaux",
           services: [
-            "Infrastructure réseau d'entreprise",
+            "Infrastructure réseau entreprise",
             "Serveurs et datacenter",
             "Sécurité informatique avancée",
-            "Solutions cloud hybrides",
-            "Supervision et maintenance"
+            "+ 2 autres services"
           ]
         }
       ],
       
       avantages: [
-        "Sécurité maximale des installations",
-        "Optimisation des coûts opérationnels", 
+        "Sécurité maximale installations",
+        "Optimisation coûts opérationnels",
         "Conformité réglementaire assurée",
-        "Monitoring temps réel",
-        "Intervention maintenance prédictive"
+        "Pilotage temps réel production"
       ],
       
       exemples: [
-        "Usine agroalimentaire Vitré - Sécurité complète",
-        "Entrepôt logistique Châteaubourg - Automation",
-        "Atelier mécanique Liffré - Vidéosurveillance et accès"
+        "Usine agroalimentaire Vitré - Sécuritécomplète",
+        "Entrepôt logistique Châteaubourg - Automation"
       ]
     },
 
