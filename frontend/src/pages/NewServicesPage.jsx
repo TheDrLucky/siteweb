@@ -33,14 +33,14 @@ const ServicesPage = () => {
         "Gestion énergétique avancée"
       ],
       applications: [
-        "Résidentiel : Maisons connectées",
+        "Résidentiel : Maisons connectées + robots tondeuses",
         "Bureau : Automatisation espaces de travail",
         "Entreprise : Gestion technique bâtiment",
         "Magasin : Éclairage et ambiance",
         "Restaurant : Ambiance et confort client",
         "Résidence Senior : Confort adapté",
-        "Camping : Gestion automatisée",
-        "Municipalité : Bâtiments publics"
+        "Camping : Gestion automatisée + entretien espaces verts",
+        "Municipalité : Bâtiments publics + parcs connectés"
       ]
     },
     {
