@@ -9,6 +9,7 @@ import {
   Phone, Users, Award, MapPin
 } from 'lucide-react';
 import { mockData } from '../data/mock';
+import { topologieData } from '../data/topologies';
 import BoutiqueBlock from '../components/BoutiqueBlock';
 
 const HomePage = () => {
