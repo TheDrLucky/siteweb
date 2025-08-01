@@ -65,6 +65,17 @@ const Header = () => {
 
                 <NavigationMenuLink asChild>
                   <Link 
+                    to="/services" 
+                    className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
+                      isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
+                    }`}
+                  >
+                    Nos Services
+                  </Link>
+                </NavigationMenuLink>
+
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/topologies" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
