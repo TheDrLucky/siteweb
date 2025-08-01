@@ -194,6 +194,62 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8">
+          {/* Certifications et Marques */}
+          <div className="mb-8">
+            <div className="text-center mb-6">
+              <h3 className="text-lg font-bold text-white mb-4">Nos certifications et marques partenaires</h3>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {/* Ajax Systems */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-sm font-medium text-white">Ajax Systems</div>
+                <div className="text-xs text-gray-400">Certifié Baseline/Fibra/Superior</div>
+              </div>
+
+              {/* Control4 */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Home className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-sm font-medium text-white">Control4</div>
+                <div className="text-xs text-gray-400">Intégrateur certifié domotique</div>
+              </div>
+
+              {/* Grundig Sécurité */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Monitor className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-sm font-medium text-white">Grundig</div>
+                <div className="text-xs text-gray-400">Fournisseur sécurité officiel</div>
+              </div>
+
+              {/* Mammotion/Hooki */}
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-sm font-medium text-white">Mammotion & Hooki</div>
+                <div className="text-xs text-gray-400">Robots tondeuses premium</div>
+              </div>
+            </div>
+
+            <div className="text-center mt-6">
+              <Link 
+                to="/nos-marques" 
+                className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+              >
+                Découvrir toutes nos marques et certifications →
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400 mb-4 md:mb-0">
               © {new Date().getFullYear()} Godeloup Domotique. Tous droits réservés.
