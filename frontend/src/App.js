@@ -19,7 +19,6 @@ import LimovaPage from "./pages/LimovaPage";
 import AgentPage from "./pages/AgentPage";
 import ContactPage from "./pages/ContactPage";
 import BoutiquePage from "./pages/BoutiquePage";
-import ServicesPage from "./pages/NewServicesPage";
 import TopologiesPage from "./pages/TopologiesPage";
 import TopologyDetailPage from "./pages/TopologyDetailPage";
 
