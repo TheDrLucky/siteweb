@@ -103,7 +103,7 @@ const CityServicePage = () => {
       {/* Service détaillé */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mr-4">
@@ -117,21 +117,76 @@ const CityServicePage = () => {
                 </div>
               </div>
               
-              <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p>{detailedServiceInfo?.fullDescription || detailedServiceInfo?.description}</p>
+              <div className="space-y-6 text-gray-700 leading-relaxed mb-8">
+                <p className="text-lg">
+                  {detailedServiceInfo?.description || serviceInfo.shortDescription}
+                </p>
                 
                 <div className="space-y-3">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Pourquoi choisir nos solutions à {cityInfo.name} ?
                   </h3>
-                  {serviceInfo.benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span>{benefit}</span>
-                    </div>
-                  ))}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {serviceInfo.benefits.map((benefit, index) => (
+                      <div key={index} className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
+
+              {/* Accordion pour les détails */}
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="details">
+                  <AccordionTrigger className="text-left">
+                    <span className="font-semibold">Détails techniques et fonctionnalités</span>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="space-y-4 pt-4">
+                      <p className="text-gray-700 leading-relaxed">
+                        {detailedServiceInfo?.fullDescription}
+                      </p>
+                      {detailedServiceInfo?.features && (
+                        <div className="space-y-3">
+                          <h4 className="font-semibold text-gray-900">Fonctionnalités principales :</h4>
+                          <div className="space-y-2">
+                            {detailedServiceInfo.features.slice(0, 5).map((feature, index) => (
+                              <div key={index} className="flex items-start space-x-3">
+                                <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
+                                <span className="text-sm text-gray-700">{feature}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+                
+                <AccordionItem value="city-info">
+                  <AccordionTrigger className="text-left">
+                    <span className="font-semibold">Spécificités pour {cityInfo.name}</span>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="space-y-4 pt-4">
+                      <p className="text-gray-700">{cityInfo.specialText}</p>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-2">Zones d'intervention :</h4>
+                        <div className="grid grid-cols-2 gap-2">
+                          {cityInfo.zones.map((zone, index) => (
+                            <div key={index} className="flex items-center space-x-2">
+                              <MapPin className="w-4 h-4 text-blue-600" />
+                              <span className="text-sm text-gray-700">{zone}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
 
             <Card className="border-0 shadow-xl">
