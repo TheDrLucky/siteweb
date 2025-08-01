@@ -26,6 +26,7 @@ import RobotTondeusePage from "./pages/RobotTondeusePage";
 import NosMarquesPage from "./pages/NosMarquesPage";
 import TopologiesPage from "./pages/TopologiesPage";
 import TopologyDetailPage from "./pages/TopologyDetailPage";
+import CityServicePage from "./pages/CityServicePage";
 
 // Import SEO pages
 import BureauEtudesPage from "./pages/seo/BureauEtudesPage";
@@ -92,6 +93,43 @@ function App() {
             <Route path="/ia/chatbot-intelligent" element={<SolutionPage service="ia" solution="chatbot-intelligent" />} />
             <Route path="/ia/automatisation-ia" element={<SolutionPage service="ia" solution="automatisation-ia" />} />
             <Route path="/ia/analyse-donnees-ia" element={<SolutionPage service="ia" solution="analyse-donnees-ia" />} />
+            
+            {/* SEO Routes - City-Service Pages */}
+            {/* Vitré */}
+            <Route path="/vitre-domotique" element={<CityServicePage />} />
+            <Route path="/vitre-securite" element={<CityServicePage />} />
+            <Route path="/vitre-informatique" element={<CityServicePage />} />
+            <Route path="/vitre-ia" element={<CityServicePage />} />
+            
+            {/* Châteaubourg */}
+            <Route path="/chateaubourg-domotique" element={<CityServicePage />} />
+            <Route path="/chateaubourg-securite" element={<CityServicePage />} />
+            <Route path="/chateaubourg-informatique" element={<CityServicePage />} />
+            <Route path="/chateaubourg-ia" element={<CityServicePage />} />
+            
+            {/* Fougères */}
+            <Route path="/fougeres-domotique" element={<CityServicePage />} />
+            <Route path="/fougeres-securite" element={<CityServicePage />} />
+            <Route path="/fougeres-informatique" element={<CityServicePage />} />
+            <Route path="/fougeres-ia" element={<CityServicePage />} />
+            
+            {/* Rennes */}
+            <Route path="/rennes-domotique" element={<CityServicePage />} />
+            <Route path="/rennes-securite" element={<CityServicePage />} />
+            <Route path="/rennes-informatique" element={<CityServicePage />} />
+            <Route path="/rennes-ia" element={<CityServicePage />} />
+            
+            {/* Laval */}
+            <Route path="/laval-domotique" element={<CityServicePage />} />
+            <Route path="/laval-securite" element={<CityServicePage />} />
+            <Route path="/laval-informatique" element={<CityServicePage />} />
+            <Route path="/laval-ia" element={<CityServicePage />} />
+            
+            {/* La Guerche-de-Bretagne */}
+            <Route path="/la-guerche-de-bretagne-domotique" element={<CityServicePage />} />
+            <Route path="/la-guerche-de-bretagne-securite" element={<CityServicePage />} />
+            <Route path="/la-guerche-de-bretagne-informatique" element={<CityServicePage />} />
+            <Route path="/la-guerche-de-bretagne-ia" element={<CityServicePage />} />
           </Routes>
         </main>
         <Footer />
