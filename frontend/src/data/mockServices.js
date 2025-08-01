@@ -55,25 +55,42 @@ export const servicesData = {
   securite: {
     id: "securite",
     title: "Sécurité",
-    subtitle: "Alarmes et vidéosurveillance",
-    description: "Protégez votre domicile ou votre entreprise 24h/24 grâce à nos solutions de sécurité de pointe. Nous installons des systèmes complets pour assurer votre sérénité.",
-    fullDescription: "Protégez votre domicile ou votre entreprise 24h/24 grâce à nos solutions de sécurité de pointe. Nous installons des systèmes complets pour assurer votre sérénité : Alarmes anti-intrusion intelligentes capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle pour une intervention rapide. Vidéosurveillance HD avec caméras haute définition (vision nocturne, détection de mouvement) afin de surveiller vos entrées, jardins, parkings ou locaux sensibles en temps réel depuis une application mobile. Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles, idéal pour bureaux, entrepôts ou résidences collectives. Détecteurs de fumée, de gaz et d'inondation connectés pour vous alerter au moindre danger domestique ou industriel, évitant les sinistres. Interphones vidéo et portiers connectés pour identifier vos visiteurs à distance et ouvrir portes ou portails depuis votre smartphone. Nos solutions de sécurité renforcent la protection de vos proches, de vos employés et de vos biens. Vous bénéficiez d'une tranquillité d'esprit absolue, de la réduction potentielle de vos primes d'assurance, et d'un environnement sécurisé en permanence.",
+    subtitle: "Alarmes Ajax Systems & Vidéosurveillance Grundig Security",
+    description: "Partenaire officiel Ajax Systems et Grundig Security. Nous installons et maintenons des systèmes de sécurité certifiés pour tous types de sites, de la protection domestique aux installations industrielles haute sécurité.",
+    fullDescription: "Partenaire officiel Ajax Systems et Grundig Security, nous protégeons votre domicile ou votre entreprise 24h/24 grâce à nos solutions de sécurité de pointe. Nous installons des systèmes complets pour assurer votre sérénité : Alarmes Ajax Systems anti-intrusion intelligentes (Baseline, Fibra, Superior) capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle pour une intervention rapide. Vidéosurveillance Grundig Security HD avec caméras haute définition (vision nocturne, détection de mouvement, analytics comportementales) afin de surveiller vos entrées, jardins, parkings ou locaux sensibles en temps réel depuis une application mobile. Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles, idéal pour bureaux, entrepôts ou résidences collectives. Détecteurs de fumée, de gaz et d'inondation connectés Ajax pour vous alerter au moindre danger domestique ou industriel, évitant les sinistres. Interphones vidéo et portiers connectés Grundig pour identifier vos visiteurs à distance et ouvrir portes ou portails depuis votre smartphone. Nos solutions de sécurité Ajax et Grundig renforcent la protection de vos proches, de vos employés et de vos biens. Vous bénéficiez d'une tranquillité d'esprit absolue, de la réduction potentielle de vos primes d'assurance, et d'un environnement sécurisé en permanence.",
     icon: "Shield",
     color: "red",
     features: [
-      "Alarmes anti-intrusion intelligentes capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle pour une intervention rapide",
-      "Vidéosurveillance HD avec caméras haute définition (vision nocturne, détection de mouvement) afin de surveiller vos entrées, jardins, parkings ou locaux sensibles en temps réel depuis une application mobile",
-      "Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles, idéal pour bureaux, entrepôts ou résidences collectives",
-      "Détecteurs de fumée, de gaz et d'inondation connectés pour vous alerter au moindre danger domestique ou industriel, évitant les sinistres",
-      "Interphones vidéo et portiers connectés pour identifier vos visiteurs à distance et ouvrir portes ou portails depuis votre smartphone"
+      "🛡️ Alarmes Ajax Systems Baseline/Fibra/Superior : détection intelligente anti-intrusion avec alertes instantanées et télésurveillance professionnelle pour intervention rapide",
+      "🎥 Vidéosurveillance Grundig Security HD : caméras haute définition avec vision nocturne, détection de mouvement et analytics comportementales pour surveillance temps réel via application mobile",  
+      "🔐 Contrôle d'accès professionnel Ajax : badges RFID, digicodes sécurisés et biométrie pour filtrer les entrées dans bâtiments ou zones confidentielles (bureaux, entrepôts, résidences)",
+      "🔥 Détecteurs techniques Ajax connectés : fumée, gaz et inondation pour alertes immédiates dangers domestiques/industriels et prévention sinistres",
+      "🚪 Interphones vidéo Grundig : identification visiteurs à distance et ouverture portes/portails depuis smartphone avec communication audio bidirectionnelle",
+      "📱 Applications mobiles Ajax et Grundig : supervision complète de vos systèmes de sécurité depuis smartphone avec notifications push en temps réel",
+      "🚨 Télésurveillance 24h/24 certifiée APSAD : centres de surveillance agréés avec intervention rapide des forces de l'ordre en cas d'intrusion confirmée",
+      "⚡ Systèmes anti-sabotage Ajax : protection contre brouillage, coupure secteur et tentatives de neutralisation avec communication radio bidirectionnelle chiffrée",
+      "🏢 Solutions Grundig IP industrielles : vidéosurveillance professionnelle pour sites sensibles avec enregistrement haute résolution et stockage sécurisé longue durée"
     ],
     benefits: [
-      "Renforcent la protection de vos proches, de vos employés et de vos biens",
-      "Tranquillité d'esprit absolue 24h/24",
-      "Réduction potentielle de vos primes d'assurance",
-      "Environnement sécurisé en permanence"
+      "Protection Ajax et Grundig 24h/24 avec intervention rapide garantie",
+      "Tranquillité d'esprit absolue grâce aux technologies certifiées européennes",
+      "Réduction potentielle de vos primes d'assurance avec équipements agréés",
+      "Environnement sécurisé en permanence avec supervision à distance"
     ],
-    brands: ["Ajax Baseline", "Ajax Fibra", "Ajax Superior", "Grundig Security"]
+    brands: ["Ajax Baseline", "Ajax Fibra", "Ajax Superior", "Grundig Security", "APSAD", "Télésurveillance certifiée"],
+    partnerships: {
+      ajax: {
+        title: "Partenaire officiel Ajax Systems",
+        description: "Certifiés sur toute la gamme Ajax : Baseline (résidentiel), Fibra (professionnel radio), Superior (haute sécurité filaire)",
+        certifications: ["Ajax Baseline", "Ajax Fibra", "Ajax Superior"],
+        specialties: ["Installation", "Configuration", "Maintenance", "Formation utilisateurs"]
+      },
+      grundig: {
+        title: "Expert Grundig Security",
+        description: "Solutions vidéosurveillance Grundig de l'analogique HD aux systèmes IP avec intelligence artificielle intégrée",
+        specialties: ["Caméras résidentielles", "Systèmes IP industriels", "Analytics comportementales", "Stockage sécurisé"]
+      }
+    }
   },
 
   informatique: {
