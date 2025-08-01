@@ -78,7 +78,7 @@ const ParrainagePage = () => {
               {
                 step: "03",
                 title: "Vous recevez votre bon",
-                description: "Après installation, vous recevez votre bon d'achat et lui une remise spéciale !",
+                description: "Après installation, vous recevez votre carte-cadeau électronique et lui une remise spéciale !",
                 icon: Gift,
                 color: "bg-purple-500"
               }
