@@ -157,6 +157,17 @@ const Header = () => {
               Accueil
             </Link>
 
+            {/* Services Link */}
+            <Link
+              to="/services"
+              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+              }`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Nos Services
+            </Link>
+
             {/* Topologies Link */}
             <Link
               to="/topologies"
