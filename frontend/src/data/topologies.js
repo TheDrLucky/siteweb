@@ -97,7 +97,17 @@ export const topologieData = {
             "Installation home cinéma",
             "Wi-Fi professionnel optimisé",
             "Gestion énergétique intelligente",
-            "Robot tondeuse connecté"
+            "Robots tondeuses connectés (Mammotion LUBA, Hooki M1)"
+          ]
+        },
+        {
+          category: "Entretien Automatisé",
+          services: [
+            "Robot tondeuse Mammotion LUBA (navigation RTK)",
+            "Robot tondeuse Hooki M1 (intelligence artificielle)",
+            "Installation sans câble périmètrique",
+            "Application smartphone dédiée",
+            "Maintenance et hivernage inclus"
           ]
         }
       ],
