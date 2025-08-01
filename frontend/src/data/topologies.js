@@ -390,51 +390,44 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Sécurité Camping",
+          category: "🛡️ Sécurité Camping",
           services: [
             "Vidéosurveillance périmètre et accès",
             "Alarme anti-intrusion bâtiments",
             "Contrôle d'accès camping (barrières)",
-            "Surveillance piscine et aires de jeux",
-            "Détection intrusion nocturne",
-            "Télésurveillance saisonnière"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Services Vacanciers",
+          category: "🏕️ Services Vacanciers",
           services: [
             "Éclairage automatique allées",
             "Sonorisation espaces animations",
             "Wi-Fi camping haut débit",
-            "Affichage numérique informations",
-            "Borne de recharge véhicules électriques"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Gestion Technique",
+          category: "⚙️ Gestion Technique",
           services: [
             "Automatisation arrosage espaces verts",
             "Gestion éclairage public camping",
             "Monitoring consommations énergétiques",
-            "Contrôle pompes et traitement piscine",
-            "Robots tondeuses pour grandes surfaces (Mammotion)",
-            "Gestion centralisée multi-bâtiments"
+            "+ 3 autres services"
           ]
         }
       ],
       
       avantages: [
         "Sécurité vacanciers 24h/24",
-        "Ambiance camping conviviale",
+        "Ambiance camping conviviale", 
         "Économies énergétiques importantes",
-        "Gestion simplifiée du site",
-        "Attractivité services modernes"
+        "Gestion simplifiée haute saison"
       ],
       
       exemples: [
         "Camping 4* Vitré - Installation complète",
-        "Village vacances Châteaubourg - Sécurité et services",
-        "Camping municipal Liffré - Éclairage et surveillance"
+        "Village vacances Châteaubourg - Sécurité"
       ]
     },
 
