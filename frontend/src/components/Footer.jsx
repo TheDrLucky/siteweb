@@ -255,7 +255,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Godeloup Domotique. Tous droits réservés.
             </p>
             <p className="text-xs text-gray-500">
-              Artisan installateur certifié • Intervention Grand Ouest • Solutions sur-mesure
+              Entreprise de prestations certifiée • Ajax Baseline/Fibra/Superior • Control4 • Grundig • Intervention Grand Ouest
             </p>
           </div>
         </div>
