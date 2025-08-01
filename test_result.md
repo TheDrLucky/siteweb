@@ -215,7 +215,7 @@ backend:
         comment: "Backend existant fonctionnel, aucune modification nécessaire pour cette phase d'amélioration frontend"
       - working: true
         agent: "testing"
-        comment: "Test complet effectué après modifications boutique frontend. Backend stable et fonctionnel: serveur répond correctement sur https://db23dbf6-bdac-4916-8f80-9f0d0459363b.preview.emergentagent.com/api, MongoDB accessible, toutes les routes API (/api/, /api/status GET/POST) opérationnelles, aucune régression détectée. Minor: CORS headers manquants dans OPTIONS mais n'affecte pas le fonctionnement. Services supervisorctl tous RUNNING."
+        comment: "Test complet effectué après modifications boutique frontend. Backend stable et fonctionnel: serveur répond correctement sur https://8e31b100-6e0e-47ed-ac60-68e5f81743e4.preview.emergentagent.com/api, MongoDB accessible, toutes les routes API (/api/, /api/status GET/POST) opérationnelles, aucune régression détectée. Minor: CORS headers manquants dans OPTIONS mais n'affecte pas le fonctionnement. Services supervisorctl tous RUNNING."
 
 metadata:
   created_by: "main_agent"
