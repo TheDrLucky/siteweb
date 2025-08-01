@@ -176,7 +176,7 @@ const ParrainagePage = () => {
 
                   <div className="space-y-2">
                     {[
-                      "Bon d'achat valable 2 ans",
+                      "Carte-cadeau valable 2 ans",
                       "Utilisable sur tous nos services",
                       "Cumulable avec autres offres"
                     ].map((benefit, idx) => (
