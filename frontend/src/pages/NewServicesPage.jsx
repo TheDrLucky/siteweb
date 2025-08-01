@@ -308,11 +308,11 @@ const ServicesPage = () => {
 
           <div className="text-center mt-12">
             <p className="text-blue-100 mb-4">
-              Ces certifications vous garantissent une installation conforme et un service après-vente optimal.
+              Ces certifications officielles vous garantissent une installation conforme et un service professionnel.
             </p>
             <Button asChild variant="secondary" size="lg">
-              <Link to="/about">
-                En savoir plus sur notre expertise
+              <Link to="/parrainage">
+                Découvrir notre programme de parrainage
               </Link>
             </Button>
           </div>
