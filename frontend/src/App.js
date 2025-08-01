@@ -22,6 +22,8 @@ import BoutiquePage from "./pages/BoutiquePage";
 import ParrainagePage from "./pages/ParrainagePage";
 import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 import PolitiqueConfidentialitePage from "./pages/PolitiqueConfidentialitePage";
+import RobotTondeusePage from "./pages/RobotTondeusePage";
+import NosMarquesPage from "./pages/NosMarquesPage";
 import TopologiesPage from "./pages/TopologiesPage";
 import TopologyDetailPage from "./pages/TopologyDetailPage";
 
