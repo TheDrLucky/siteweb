@@ -245,8 +245,8 @@ export const topologieData = {
     magasin: {
       id: "magasin",
       title: "MAGASIN", 
-      subtitle: "Commerce de détail sécurisé",
-      description: "Protection et optimisation de votre espace commercial pour rassurer clients et employés.",
+      subtitle: "Commerces & Magasins de détail",
+      description: "Nous aidons les commerçants et gérants de boutiques à sécuriser et optimiser leur point de vente. Pour un magasin de détail (boutique de vêtements, boulangerie, pharmacie, etc.), la sécurité anti-vol est primordiale : nous installons des caméras de surveillance anti-shoplifting haute définition et des alarmes silencieuses reliées à un centre de télésurveillance pour intervenir rapidement en cas d'effraction nocturne. Des portiques antivol électroniques peuvent être placés aux entrées pour dissuader la démarque inconnue, et même des coffres-forts connectés pour vos recettes journalières afin de prévenir les braquages (systèmes anti-hold-up). Au-delà de la sécurité, nos solutions améliorent le confort des clients et employés : éclairage d'ambiance automatique qui met en valeur vos produits en vitrine et s'adapte à la luminosité extérieure, sonorisation multiroom pour créer une ambiance musicale agréable en magasin, climatisation intelligente des espaces de vente pour un confort optimal des clients été comme hiver. Nous proposons également des outils de gestion énergétique pour les commerces : suivi en temps réel de la consommation d'électricité, pilotage des enseignes lumineuses et des équipements selon les horaires d'ouverture, afin de réduire la facture énergétique. En équipant votre commerce avec ces technologies, vous bénéficiez d'un lieu de vente plus sûr, plus accueillant et plus efficace, ce qui renforce la satisfaction client et la performance de votre activité.",
       icon: "ShoppingBag",
       color: "orange",
       image: "/topologies/magasin.jpg",
