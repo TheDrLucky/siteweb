@@ -46,29 +46,30 @@ const ServicesPage = () => {
     {
       id: "securite", 
       title: "Sécurité",
-      subtitle: "Protection sur-mesure 24h/24",
-      description: "Systèmes de sécurité adaptés à chaque secteur. De la protection domestique aux solutions industrielles haute sécurité.",
+      subtitle: "Protection Ajax Systems & Grundig Security",
+      description: "Partenaire officiel Ajax Systems et Grundig Security. Solutions de sécurité certifiées de la protection domestique aux installations industrielles haute sécurité.",
       icon: "Shield",
       color: "red",
       technologies: [
-        "Alarmes anti-intrusion Ajax Systems (Baseline/Fibra/Superior)",
-        "Vidéosurveillance Grundig haute définition",
-        "Contrôle d'accès biométrique et badges",
-        "Détection technique (fumée, gaz, inondation)",
-        "Télésurveillance Cors Online 24h/24",
-        "Systèmes anti-hold-up et protection",
-        "Périmétrie et barrières infrarouges",
-        "Centres de surveillance agréés"
+        "🛡️ Alarmes Ajax Systems (Baseline, Fibra, Superior)",
+        "🎥 Vidéosurveillance Grundig Security haute définition",
+        "🔐 Contrôle d'accès professionnel (badges, biométrie)",
+        "📱 Applications mobiles Ajax et supervision à distance",
+        "🚨 Télésurveillance et intervention rapide",
+        "🔥 Détection incendie, gaz, inondation connectée",
+        "🚪 Interphones vidéo et portiers automatiques",
+        "⚡ Systèmes anti-sabotage et anti-brouillage",
+        "📞 Centres de télésurveillance certifiés APSAD"
       ],
       applications: [
-        "Résidentiel : Protection familiale",
-        "Bureau : Sécurité professionnelle",
-        "Entreprise : Sécurité industrielle",
-        "Magasin : Anti-vol et protection",
-        "Restaurant : Sécurité CHR",
-        "Résidence Senior : Protection résidents",
-        "Camping : Surveillance périmétrique",
-        "Municipalité : Sécurité publique"
+        "Résidentiel : Ajax Hub + caméras Grundig résidentielles",
+        "Bureau : Contrôle d'accès + Ajax Fibra professionnelle", 
+        "Entreprise : Ajax Superior + Grundig IP industrielle",
+        "Magasin : Anti-vol + Grundig analytics comportementales",
+        "Restaurant : Ajax discret + Grundig cuisines HACCP",
+        "Résidence Senior : Ajax médical + Grundig bienveillance",
+        "Camping : Ajax périmétrique + Grundig surveillance piscines", 
+        "Municipalité : Ajax bâtiments publics + Grundig espaces urbains"
       ]
     },
     {
