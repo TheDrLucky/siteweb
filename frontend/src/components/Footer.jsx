@@ -52,18 +52,65 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Nos Services</h3>
+            <h3 className="font-bold text-lg mb-4">Solutions</h3>
             <ul className="space-y-2">
-              {mockData.services.map((service) => (
-                <li key={service.id}>
-                  <Link 
-                    to={`/services/${service.id}`}
-                    className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
-                  >
-                    {service.title}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/services/domotique" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Domotique
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/securite" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Sécurité
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/informatique" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Informatique
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ia" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Intelligence IA
+                </Link>
+              </li>
+              <li>
+                <Link to="/robot-tondeuse" className="text-gray-300 hover:text-blue-400 transition-colors text-sm font-medium">
+                  🤖 Robot Tondeuse
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Topologies */}
+          <div>
+            <h3 className="font-bold text-lg mb-4">Par Secteur</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/topologies/residentiel" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Résidentiel
+                </Link>
+              </li>
+              <li>
+                <Link to="/topologies/entreprise" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Entreprise
+                </Link>
+              </li>
+              <li>
+                <Link to="/topologies/restaurant" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Restaurant/Hôtel
+                </Link>
+              </li>
+              <li>
+                <Link to="/topologies/municipalite" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Municipalité
+                </Link>
+              </li>
+              <li>
+                <Link to="/topologies" className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium">
+                  Voir toutes →
+                </Link>
+              </li>
             </ul>
           </div>
 
