@@ -212,7 +212,7 @@ const ParrainagePage = () => {
                 location: "Vitré",
                 project: "A parrainé son voisin pour domotique",
                 reward: "100€",
-                content: "J'ai recommandé Godeloup à mon voisin qui voulait automatiser sa maison. Installation parfaite, et j'ai reçu mon bon d'achat de 100€ que j'ai utilisé pour ajouter des détecteurs. Win-win !",
+                content: "J'ai recommandé Godeloup à mon voisin qui voulait automatiser sa maison. Installation parfaite, et j'ai reçu ma carte-cadeau de 100€ que j'ai utilisée pour ajouter des détecteurs. Win-win !",
                 rating: 5
               },
               {
