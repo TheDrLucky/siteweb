@@ -102,16 +102,16 @@ const ServicesPage = () => {
     {
       id: "ia",
       title: "Intelligence Artificielle",
-      subtitle: "IA conversationnelle et automatisation",
-      description: "Solutions d'intelligence artificielle métier avec notre partenaire Limova. Chatbots, assistants virtuels et automatisation.",
+      subtitle: "Godeloup Domotique IA - Solutions conversationnelles",
+      description: "Notre gamme complète de solutions d'intelligence artificielle conversationnelle. Chatbots, assistants virtuels et automatisation intelligente développés en interne.",
       icon: "Brain", 
       color: "purple",
       technologies: [
-        "Chatbots intelligents Limova",
-        "Assistants virtuels métier",
+        "Godeloup Domotique IA - Chatbots intelligents",
+        "Assistants virtuels métier personnalisés",
         "IA conversationnelle en marque blanche",
-        "Automatisation des processus",
-        "Analyse prédictive de données",
+        "Automatisation des processus intelligents",
+        "Analyse prédictive et données",
         "Intégration CRM et outils métier",
         "Formation continue de l'IA",
         "Support client automatisé 24h/24"
