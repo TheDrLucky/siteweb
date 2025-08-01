@@ -4,7 +4,7 @@ export const mockData = {
   company: {
     name: "Godeloup Domotique",
     tagline: "Des solutions connectées pour l'intérieur et l'extérieur",
-    description: "Godeloup Domotique est votre expert régional en domotique, sécurité, informatique et intelligence artificielle. Basée à Vitré en Bretagne, notre entreprise accompagne depuis 2015 les particuliers, professionnels et collectivités du Grand Ouest dans leurs projets technologiques sur-mesure.",
+    description: "Godeloup Domotique est votre expert régional en domotique, sécurité, informatique et intelligence artificielle. Basée à Vitré en Bretagne, notre entreprise accompagne depuis 2015 les particuliers, professionnels et collectivités du Grand Ouest dans leurs projets technologiques sur-mesure. Nous proposons une approche globale : non seulement votre bâtiment (maison, bureau, commerce…) devient intelligent et sécurisé, mais vos extérieurs peuvent aussi être automatisés pour plus de confort et d'efficacité. Lumières, chauffage, alarmes, vidéosurveillance, contrôle d'accès, réseau informatique, robots tondeuses, arrosage automatique, assistants virtuels – nous intégrons toutes ces solutions au service de votre quotidien. Chaque projet est unique, et nous mettons un point d'honneur à offrir un service personnalisé alliant expertise technique et qualité artisanale.",
     mission: "Nous proposons une approche globale : non seulement votre bâtiment (maison, bureau, commerce…) devient intelligent et sécurisé, mais vos extérieurs peuvent aussi être automatisés pour plus de confort et d'efficacité.",
     specialties: "Lumières, chauffage, alarmes, vidéosurveillance, contrôle d'accès, réseau informatique, robots tondeuses, arrosage automatique, assistants virtuels – nous intégrons toutes ces solutions au service de votre quotidien.",
     approach: "Chaque projet est unique, et nous mettons un point d'honneur à offrir un service personnalisé alliant expertise technique et qualité artisanale.",
@@ -57,14 +57,14 @@ export const mockData = {
       icon: "shield",
       color: "red",
       features: [
-        "Alarmes anti-intrusion intelligentes capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle",
-        "Vidéosurveillance HD avec caméras haute définition (vision nocturne, détection de mouvement) pour surveiller vos entrées, jardins, parkings en temps réel depuis une application mobile",
-        "Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles",
-        "Détecteurs de fumée, de gaz et d'inondation connectés pour vous alerter au moindre danger domestique ou industriel",
+        "Alarmes anti-intrusion intelligentes capables de détecter les effractions et de vous alerter instantanément, avec option de télésurveillance professionnelle pour une intervention rapide",
+        "Vidéosurveillance HD avec caméras haute définition (vision nocturne, détection de mouvement) afin de surveiller vos entrées, jardins, parkings ou locaux sensibles en temps réel depuis une application mobile",
+        "Contrôle d'accès sécurisé (badges, digicodes, biométrie) pour filtrer les entrées dans vos bâtiments ou pièces confidentielles, idéal pour bureaux, entrepôts ou résidences collectives",
+        "Détecteurs de fumée, de gaz et d'inondation connectés pour vous alerter au moindre danger domestique ou industriel, évitant les sinistres",
         "Interphones vidéo et portiers connectés pour identifier vos visiteurs à distance et ouvrir portes ou portails depuis votre smartphone"
       ],
       benefits: [
-        "Protection de vos proches, employés et biens",
+        "Renforcent la protection de vos proches, de vos employés et de vos biens",
         "Tranquillité d'esprit absolue 24h/24",
         "Réduction potentielle de vos primes d'assurance",
         "Environnement sécurisé en permanence"
@@ -74,20 +74,20 @@ export const mockData = {
       id: "informatique",
       title: "Informatique",
       subtitle: "Solutions IT professionnelles",
-      description: "Nous mettons également à profit nos compétences en informatique pour optimiser vos infrastructures numériques. Que ce soit pour un usage domestique avancé ou pour une PME.",
+      description: "Nous mettons également à profit nos compétences en informatique pour optimiser vos infrastructures numériques. Que ce soit pour un usage domestique avancé ou pour une PME, nous proposons.",
       icon: "monitor",
       color: "green",
       features: [
-        "Réseaux informatiques fiables et Wi-Fi professionnel : installation de routeurs, switchs et bornes Wi-Fi performants pour une couverture optimale",
-        "Serveurs NAS et solutions de sauvegarde : centralisation de vos données, serveurs de stockage en réseau et stratégies de sauvegarde automatique",
-        "Sécurité informatique : pare-feux (firewall), antivirus gérés, VPN d'entreprise, audit de vulnérabilité pour protéger vos données",
-        "Maintenance et support : maintenance préventive, dépannage rapide sur site ou à distance, mise à jour de logiciels",
-        "Solutions Cloud et télétravail : outils collaboratifs en ligne, connexions sécurisées pour le travail à distance"
+        "Réseaux informatiques fiables et Wi-Fi professionnel : installation de routeurs, switchs et bornes Wi-Fi performants pour une couverture optimale sans coupures, y compris dans les grands bâtiments ou à l'extérieur",
+        "Serveurs NAS et solutions de sauvegarde : centralisation de vos données, mises en place de serveurs de stockage en réseau et stratégies de sauvegarde automatique pour sécuriser vos fichiers importants",
+        "Sécurité informatique : pare-feux (firewall), antivirus gérés, VPN d'entreprise, audit de vulnérabilité afin de protéger vos données et prévenir les cyberattaques",
+        "Maintenance et support : maintenance préventive de votre parc informatique, dépannage rapide sur site ou à distance de vos PC/Mac, mise à jour de logiciels et accompagnement au quotidien",
+        "Solutions Cloud et télétravail : mise en place d'outils collaboratifs en ligne, de connexions sécurisées pour le travail à distance et de services cloud adaptés à votre activité"
       ],
       benefits: [
-        "Productivité augmentée",
-        "Risques de panne réduits",
-        "Support technique réactif",
+        "Votre productivité augmente",
+        "Les risques de panne sont réduits",
+        "Support technique réactif en cas de besoin",
         "Système d'information robuste et évolutif"
       ]
     },
@@ -95,21 +95,21 @@ export const mockData = {
       id: "ia",
       title: "Intelligence Artificielle",
       subtitle: "Assistants virtuels et automatisation IA",
-      description: "L'intelligence artificielle est le nouvel atout pour booster votre activité et votre relation client. Grâce à notre solution Godeloup Domotique IA – une solution d'IA conversationnelle de nouvelle génération en marque blanche.",
+      description: "L'intelligence artificielle est le nouvel atout pour booster votre activité et votre relation client. Grâce à notre partenariat avec Limova – une solution d'IA conversationnelle de nouvelle génération en marque blanche – nous intégrons l'IA au service de vos projets.",
       icon: "brain",
       color: "purple",
       features: [
-        "Chatbots intelligents : des agents virtuels capables de dialoguer naturellement avec vos clients sur votre site web ou vos réseaux sociaux",
-        "Assistants vocaux personnalisés : déploiement d'assistants vocaux sur vos équipements connectés ou bornes d'accueil",
-        "Automatisation des processus : utilisation de l'IA pour traiter plus rapidement certaines tâches répétitives",
-        "Analyse prédictive : outils d'IA capables d'anticiper les pannes (maintenance prédictive) ou de mieux comprendre le comportement de vos clients",
-        "Formation et accompagnement : formation à l'utilisation et suivi pour améliorer en continu les performances de vos agents virtuels"
+        "Chatbots intelligents : des agents virtuels capables de dialoguer naturellement avec vos clients sur votre site web ou vos réseaux sociaux, pour répondre aux questions fréquentes, qualifier les demandes et même prendre des rendez-vous ou générer des devis automatiquement",
+        "Assistants vocaux personnalisés : déploiement d'assistants vocaux sur vos équipements connectés ou bornes d'accueil, afin de guider les utilisateurs ou clients par la voix",
+        "Automatisation des processus : utilisation de l'IA pour traiter plus rapidement certaines tâches répétitives (analyse de données, rapports, tri de demandes) et vous faire gagner un temps précieux",
+        "Analyse prédictive : implémentez des outils d'IA capables d'anticiper les pannes (maintenance prédictive) ou de mieux comprendre le comportement de vos clients afin d'optimiser vos services",
+        "Formation et accompagnement : nous vous formons à l'utilisation de ces nouveaux outils et assurons le suivi pour améliorer en continu les performances de vos agents virtuels (apprentissage automatique basé sur les interactions réelles)"
       ],
       benefits: [
-        "Expérience innovante pour vos clients",
-        "Efficacité interne améliorée",
-        "Avantage concurrentiel durable",
-        "Solution en marque blanche personnalisable"
+        "Expérience innovante à vos clients tout en améliorant votre efficacité interne",
+        "Agents conversationnels ultra-performants sous votre propre marque",
+        "Avantage concurrentiel durable pour votre entreprise",
+        "Solution personnalisable quel que soit votre secteur"
       ]
     }
   ],
@@ -199,9 +199,9 @@ export const mockData = {
 
   // Limova AI section
   limova: {
-    title: "Limova Intelligence Artificielle",
+    title: "Godeloup Domotique IA powered by Limova",
     subtitle: "L'IA conversationnelle nouvelle génération",
-    description: "Découvrez Limova, notre partenaire IA qui révolutionne l'interaction client avec des agents virtuels ultra-performants et personnalisables.",
+    description: "Découvrez Limova, notre solution IA en marque blanche qui révolutionne l'interaction client avec des agents virtuels ultra-performants et personnalisables.",
     website: "https://www.limova.ai",
     
     presentation: {
@@ -294,7 +294,10 @@ export const mockData = {
   about: {
     title: "Godeloup Domotique, votre partenaire technologique de confiance",
     story: "Depuis 2015, Godeloup Domotique accompagne particuliers et professionnels du Grand Ouest dans leurs projets technologiques. Notre approche artisanale allie expertise technique et service personnalisé pour des solutions sur-mesure parfaitement adaptées à vos besoins.",
-    values: [
+    mission: "Notre mission est de transformer votre habitat et vos espaces de travail en environnements intelligents, sécurisés et efficaces. Nous croyons que la technologie doit servir l'humain et simplifier le quotidien, tout en respectant vos besoins spécifiques et votre budget.",
+    values: "Nos valeurs s'articulent autour de l'excellence technique, du service personnalisé et de la proximité. Nous privilégions une approche artisanale où chaque installation est réalisée avec soin, dans le respect des normes et avec un souci constant de la qualité.",
+    interventionZone: "Basés à Vitré en Ille-et-Vilaine, nous intervenons dans un rayon de 50 km autour de notre siège social. Notre zone d'intervention principale couvre les départements de l'Ille-et-Vilaine (35), de la Mayenne (53) et les zones limitrophes des Côtes-d'Armor (22) et de la Loire-Atlantique (44). Cette proximité géographique nous permet d'assurer un service réactif, que ce soit pour les interventions d'urgence, la maintenance ou le suivi de vos installations.",
+    values_details: [
       {
         title: "Expertise Technique",
         description: "Une équipe de spécialistes certifiés dans tous nos domaines d'intervention."
@@ -315,8 +318,7 @@ export const mockData = {
     certifications: [
       "Certifié Ajax Baseline/Fibra/Superior",
       "Certifié Control4 domotique",
-      "Partenaire Schneider Electric",
-      "Agréé Assurance Qualibat", 
+      "Partenaire Grundig Security",
       "Formation continue"
     ]
   }
