@@ -178,6 +178,84 @@ const HomePage = () => {
         maxItems={3}
       />
 
+      {/* Robot Tondeuse Highlight Section */}
+      <section className="py-16 bg-gradient-to-br from-green-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge variant="outline" className="mb-4 px-3 py-1 bg-white border-green-200 text-green-700">
+                🤖 Solution robotique
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Robot Tondeuse Connecté
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Fini la corvée de tonte ! Nos robots tondeuses de dernière génération entretiennent 
+                votre pelouse de façon autonome, sans intervention humaine.
+              </p>
+              
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Navigation RTK haute précision</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Tonte silencieuse et écologique</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Contrôle via smartphone</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-gray-700">Mulching naturel pour pelouse plus dense</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+                  <Link to="/robot-tondeuse">
+                    <span className="mr-2">🤖</span>
+                    Découvrir nos robots tondeuses
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50">
+                  <Link to="/contact">
+                    Devis gratuit
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="lg:pl-8">
+              <Card className="p-8 bg-white border-0 shadow-xl">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <span className="text-4xl">🤖</span>
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Modèles disponibles
+                  </h3>
+                  
+                  <div className="space-y-4">
+                    <div className="p-4 bg-gray-50 rounded-lg">
+                      <h4 className="font-semibold text-gray-900">Mammotion LUBA</h4>
+                      <p className="text-sm text-gray-600">Navigation RTK - Jusqu'à 5000m²</p>
+                    </div>
+                    <div className="p-4 bg-gray-50 rounded-lg">
+                      <h4 className="font-semibold text-gray-900">Hooki M1</h4>
+                      <p className="text-sm text-gray-600">Intelligence IA - Jusqu'à 3000m²</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
