@@ -308,7 +308,8 @@ export const mockData = {
       }
     ],
     certifications: [
-      "Certifié Ajax Systems",
+      "Certifié Ajax Baseline/Fibra/Superior",
+      "Certifié Control4 domotique",
       "Partenaire Schneider Electric",
       "Agréé Assurance Qualibat", 
       "Formation continue"
