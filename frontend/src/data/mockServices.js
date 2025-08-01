@@ -5,7 +5,7 @@ export const servicesData = {
     title: "Domotique",
     subtitle: "Maison connectée et automatisation",
     description: "La domotique vise à rendre votre habitat plus confortable, éco-énergétique et facile à piloter. Godeloup Domotique transforme votre maison ou bâtiment en espace intelligent grâce à des solutions sur-mesure.",
-    fullDescription: "La domotique vise à rendre votre habitat plus confortable, éco-énergétique et facile à piloter. Godeloup Domotique transforme votre maison ou bâtiment en espace intelligent grâce à des solutions sur-mesure : Éclairage intelligent qui s'adapte à la luminosité et à votre présence. Thermostats connectés et gestion du chauffage/climatisation pièce par pièce pour réaliser jusqu'à 30% d'économies d'énergie. Volets roulants et stores automatiques synchronisés avec le lever/coucher du soleil ou contrôlables à distance. Systèmes audio/vidéo multiroom pour diffuser votre musique et gérer le home-cinéma dans toute la maison. Appareils électroménagers connectés et scénarios de vie (mode réveil, départ, coucher…) qui simplifient votre quotidien. En un mot, vous contrôlez l'ensemble de votre maison depuis votre smartphone ou via des assistants vocaux. Vous gagnez en confort de vie, en simplicité d'utilisation et valorisez votre bien immobilier grâce à une installation domotique moderne.",
+    fullDescription: "La domotique vise à rendre votre habitat plus confortable, éco-énergétique et facile à piloter. Godeloup Domotique transforme votre maison ou bâtiment en espace intelligent grâce à des solutions sur-mesure : Éclairage intelligent qui s'adapte à la luminosité et à votre présence. Thermostats connectés et gestion du chauffage/climatisation pièce par pièce pour réaliser jusqu'à 30% d'économies d'énergie. Volets roulants et stores automatiques synchronisés avec le lever/coucher du soleil ou contrôlables à distance. Systèmes audio/vidéo multiroom pour diffuser votre musique et gérer le home-cinéma dans toute la maison. Appareils électroménagers connectés et scénarios de vie (mode réveil, départ, coucher…) qui simplifient votre quotidien. Nous proposons également des robots tondeuses de dernière génération (comme le Mammotion LUBA à navigation RTK ou le Hooki M1 à intelligence AI) pour entretenir votre pelouse de façon autonome. Fini la corvée de tonte et les frais d'entretien réguliers de jardin – votre gazon reste impeccable toute la saison, sans intervention humaine. En un mot, vous contrôlez l'ensemble de votre maison depuis votre smartphone ou via des assistants vocaux. Vous gagnez en confort de vie, en simplicité d'utilisation et valorisez votre bien immobilier grâce à une installation domotique moderne.",
     icon: "Home",
     color: "blue",
     features: [
@@ -13,14 +13,43 @@ export const servicesData = {
       "Thermostats connectés et gestion du chauffage/climatisation pièce par pièce pour réaliser jusqu'à 30% d'économies d'énergie",
       "Volets roulants et stores automatiques synchronisés avec le lever/coucher du soleil ou contrôlables à distance",
       "Systèmes audio/vidéo multiroom pour diffuser votre musique et gérer le home-cinéma dans toute la maison",
-      "Appareils électroménagers connectés et scénarios de vie (mode réveil, départ, coucher…) qui simplifient votre quotidien"
+      "Appareils électroménagers connectés et scénarios de vie (mode réveil, départ, coucher…) qui simplifient votre quotidien",
+      "Robots tondeuses connectés (Mammotion LUBA, Hooki M1) avec navigation RTK haute précision",
+      "Arrosage automatique du jardin intelligent selon les conditions météo",
+      "Contrôle d'accès automatisé (portail, garage, porte d'entrée)",
+      "Détection de mouvement pour éclairage automatique des allées",
+      "Gestion énergétique intelligente et monitoring des consommations"
     ],
     benefits: [
       "Contrôlez l'ensemble de votre maison depuis votre smartphone ou via des assistants vocaux",
       "Gagnez en confort de vie et simplicité d'utilisation",
       "Valorisez votre bien immobilier grâce à une installation domotique moderne",
-      "Jusqu'à 30% d'économies d'énergie"
-    ]
+      "Jusqu'à 30% d'économies d'énergie",
+      "Entretien automatisé de vos espaces extérieurs"
+    ],
+    robotTondeuse: {
+      title: "Robot Tondeuse Connecté",
+      description: "Fini la corvée de tonte ! Nos robots tondeuses de dernière génération entretiennent votre pelouse de façon autonome, sans intervention humaine.",
+      models: [
+        {
+          name: "Mammotion LUBA",
+          description: "Navigation RTK professionnelle",
+          features: ["Jusqu'à 5000m²", "Sans câble périmètrique", "Précision centimétrique", "Application smartphone"]
+        },
+        {
+          name: "Hooki M1", 
+          description: "Intelligence artificielle embarquée",
+          features: ["Jusqu'à 3000m²", "IA adaptive", "Installation simplifiée", "Mulching naturel"]
+        }
+      ],
+      benefits: [
+        "Pelouse toujours parfaitement entretenue",
+        "Économies sur l'entretien jardin",
+        "Aucune intervention manuelle nécessaire",
+        "Tonte silencieuse et respectueuse de l'environnement",
+        "Gazon plus dense et plus vert grâce au mulching"
+      ]
+    }
   },
 
   securite: {
