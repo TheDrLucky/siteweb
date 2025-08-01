@@ -130,49 +130,44 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Infrastructure IT",
+          category: "💼 Infrastructure IT",
           services: [
             "Réseau informatique professionnel",
             "Wi-Fi entreprise sécurisé",
             "Serveur NAS et sauvegarde",
-            "Sécurité informatique et firewall",
-            "Solutions cloud et télétravail"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Domotique Bureau",
+          category: "🏢 Domotique Bureau",
           services: [
             "Éclairage adaptatif automatique",
-            "Gestion climatisation intelligente", 
+            "Climatisation intelligente",
             "Contrôle d'accès par badge",
-            "Stores motorisés anti-éblouissement",
-            "Salles de réunion connectées"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Sécurité Professionnelle",
+          category: "🛡️ Sécurité Professionnelle",
           services: [
-            "Alarme anti-intrusion professionnelle",
-            "Vidéosurveillance HD des locaux",
+            "Alarme Ajax anti-intrusion",
+            "Vidéosurveillance HD locaux",
             "Contrôle d'accès biométrique",
-            "Détection incendie connectée",
-            "Télésurveillance avec intervention"
+            "+ 2 autres services"
           ]
         }
       ],
       
       avantages: [
-        "Productivité des équipes optimisée",
-        "Réduction des coûts énergétiques",
-        "Sécurité des données et locaux",
-        "Image professionnelle moderne",
-        "Gestion centralisée à distance"
+        "Productivité équipes optimisée",
+        "Réduction coûts énergétiques",
+        "Sécurité données et locaux",
+        "Image moderne entreprise"
       ],
       
       exemples: [
-        "Cabinet d'avocat Vitré - Infrastructure complète",
-        "Agence immobilière Châteaubourg - Sécurité et domotique",
-        "Bureau d'études Liffré - Réseau et télétravail"
+        "Cabinet avocat Vitré - Infrastructure complète",
+        "Agence immobilière Châteaubourg - Sécurité"
       ]
     },
 
