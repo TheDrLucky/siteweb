@@ -19,6 +19,7 @@ import LimovaPage from "./pages/LimovaPage";
 import AgentPage from "./pages/AgentPage";
 import ContactPage from "./pages/ContactPage";
 import BoutiquePage from "./pages/BoutiquePage";
+import ParrainagePage from "./pages/ParrainagePage";
 import TopologiesPage from "./pages/TopologiesPage";
 import TopologyDetailPage from "./pages/TopologyDetailPage";
 
