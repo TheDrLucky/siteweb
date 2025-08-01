@@ -124,13 +124,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Blog
+                <Link to="/parrainage" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  <Gift className="w-4 h-4 inline mr-1" />
+                  Programme parrainage
                 </Link>
               </li>
               <li>
-                <Link to="/limova" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Limova IA
+                <Link to="/nos-marques" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Nos marques
                 </Link>
               </li>
               <li>
@@ -139,14 +140,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                <Link to="/mentions-legales" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
                   Mentions légales
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Politique de confidentialité
-                </a>
+                <Link to="/politique-confidentialite" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Confidentialité
+                </Link>
               </li>
             </ul>
           </div>
