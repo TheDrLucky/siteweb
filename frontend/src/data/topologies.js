@@ -218,7 +218,7 @@ export const topologieData = {
       ],
       
       exemples: [
-        "Usine agroalimentaire Vitré - Sécuritécomplète",
+        "Usine agroalimentaire Vitré - Sécurité complète",
         "Entrepôt logistique Châteaubourg - Automation"
       ]
     },
