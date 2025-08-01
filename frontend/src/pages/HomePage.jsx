@@ -87,48 +87,74 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Topologies Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nos domaines d'expertise
+              Solutions par typologie de site
             </h2>
             <p className="text-lg text-gray-600">
-              Des solutions technologiques complètes pour particuliers et professionnels, 
-              avec un accompagnement personnalisé dans tout le Grand Ouest.
+              Nous adaptons nos technologies à votre secteur d'activité. Particuliers, entreprises, 
+              collectivités : chacun a ses spécificités dans le Grand Ouest.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {mockData.services.map((service) => (
-              <Card key={service.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
-                <CardContent className="p-6 text-center">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl border-2 flex items-center justify-center group-hover:scale-110 transition-transform ${getServiceColorClasses(service.color)}`}>
-                    {getServiceIcon(service.icon)}
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-sm text-gray-500 mb-4 font-medium">
-                    {service.subtitle}
-                  </p>
-                  
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Object.values(topologieData.topologies).slice(0, 6).map((topology) => {
+              const getTopologyIcon = (iconName) => {
+                const icons = { 
+                  Home, Briefcase, Building2, ShoppingBag, UtensilsCrossed, 
+                  Heart, Tent, Building, Users 
+                };
+                const IconComponent = icons[iconName];
+                return IconComponent ? <IconComponent className="w-8 h-8" /> : <Home className="w-8 h-8" />;
+              };
 
-                  <Button asChild variant="outline" className="group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">
-                    <Link to={`/services/${service.id}`}>
-                      En savoir plus
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+              const getTopologyColorClasses = (color) => {
+                const colorMap = {
+                  blue: 'text-blue-600 bg-blue-50 border-blue-200',
+                  green: 'text-green-600 bg-green-50 border-green-200',
+                  purple: 'text-purple-600 bg-purple-50 border-purple-200',
+                  orange: 'text-orange-600 bg-orange-50 border-orange-200',
+                  red: 'text-red-600 bg-red-50 border-red-200',
+                  pink: 'text-pink-600 bg-pink-50 border-pink-200',
+                  teal: 'text-teal-600 bg-teal-50 border-teal-200',
+                  slate: 'text-slate-600 bg-slate-50 border-slate-200',
+                  indigo: 'text-indigo-600 bg-indigo-50 border-indigo-200'
+                };
+                return colorMap[color] || colorMap.blue;
+              };
+
+              return (
+                <Card key={topology.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
+                  <CardContent className="p-6 text-center">
+                    <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl border-2 flex items-center justify-center group-hover:scale-110 transition-transform ${getTopologyColorClasses(topology.color)}`}>
+                      {getTopologyIcon(topology.icon)}
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {topology.title}
+                    </h3>
+                    
+                    <p className="text-sm text-gray-500 mb-4 font-medium">
+                      {topology.subtitle}
+                    </p>
+                    
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+                      {topology.description}
+                    </p>
+
+                    <Button asChild variant="outline" className="group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">
+                      <Link to={`/topologies/${topology.id}`}>
+                        Découvrir
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
 
           <div className="text-center mt-12">
