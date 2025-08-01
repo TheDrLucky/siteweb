@@ -130,8 +130,8 @@ export const topologieData = {
     bureau: {
       id: "bureau",
       title: "BUREAU",
-      subtitle: "Bureaux & Espaces de travail (TPE/PME, bureaux professionnels)",
-      description: "Pour les professionnels en bureau, start-ups, cabinets libéraux ou PME, nous créons des espaces de travail connectés qui améliorent la productivité et le bien-être des employés. Nous mettons en place un réseau informatique professionnel sécurisé (câblage, Wi-Fi entreprise stable) pour garantir la continuité de votre activité numérique. Nous installons des solutions de domotique de bureau : éclairage adaptatif et stores motorisés qui limitent l'éblouissement, gestion intelligente de la climatisation/chauffage des open-spaces et salles de réunion, et contrôle d'accès par badge pour sécuriser vos locaux. Côté sécurité, nous déployons des alarmes anti-intrusion professionnelles et des caméras de vidéosurveillance HD pour protéger vos bureaux en dehors des heures d'ouverture. L'accès peut être contrôlé par des systèmes biométriques pour les zones sensibles (salles de serveurs, archives). Grâce à la gestion centralisée, vous pilotez tout l'équipement du bureau à distance et recevez des alertes instantanées en cas d'anomalie. Ces installations connectées permettent une optimisation du confort de travail, une meilleure image moderne de votre entreprise, et contribuent aussi à des économies d'énergie (extinction automatique des lumières la nuit, etc.).",
+      subtitle: "Espaces de travail connectés TPE/PME",
+      description: "Environnement professionnel intelligent. Solutions IT, domotique et sécurité pour optimiser productivité et confort de vos équipes.",
       icon: "Briefcase",
       color: "green",
       image: "/topologies/bureau.jpg",
