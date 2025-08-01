@@ -69,61 +69,53 @@ export const topologieData = {
       
       solutions: [
         {
-          category: "Domotique Résidentielle",
+          category: "🏠 Domotique Résidentielle",
           services: [
-            "Éclairage intelligent et automatisation",
-            "Gestion du chauffage connecté",
+            "Éclairage intelligent automatique",
+            "Chauffage/clim connectés",
             "Volets roulants automatiques",
-            "Arrosage automatique du jardin",
-            "Scénarios personnalisés (réveil, départ, coucher)",
-            "Contrôle d'accès (portail, garage, porte d'entrée)"
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Sécurité Domestique", 
+          category: "🛡️ Sécurité Domestique",
           services: [
-            "Alarme anti-intrusion connectée",
-            "Vidéosurveillance périphérique",
-            "Détecteurs de fumée et monoxyde",
-            "Simulation de présence",
-            "Interphone vidéo",
-            "Télésurveillance 24h/24"
+            "Alarmes Ajax anti-intrusion",
+            "Vidéosurveillance Grundig HD",
+            "Détecteurs fumée connectés",
+            "+ 3 autres services"
           ]
         },
         {
-          category: "Multimédia & Confort",
+          category: "🎵 Multimédia & Confort",
           services: [
-            "Audio multiroom dans toute la maison", 
-            "Installation home cinéma",
+            "Audio multiroom maison",
+            "Home cinéma intelligent",
             "Wi-Fi professionnel optimisé",
-            "Gestion énergétique intelligente",
-            "Robots tondeuses connectés (Mammotion LUBA, Hooki M1)"
+            "+ 2 autres services"
           ]
         },
         {
-          category: "Entretien Automatisé",
+          category: "🤖 Entretien Automatisé",
           services: [
-            "Robot tondeuse Mammotion LUBA (navigation RTK)",
-            "Robot tondeuse Hooki M1 (intelligence artificielle)",
-            "Installation sans câble périmètrique",
-            "Application smartphone dédiée",
-            "Maintenance et hivernage inclus"
+            "Robot tondeuse Mammotion LUBA",
+            "Robot Hooki M1 intelligence IA",
+            "Arrosage automatique jardin",
+            "+ 2 autres services"
           ]
         }
       ],
       
       avantages: [
         "Confort de vie amélioré",
-        "Économies d'énergie jusqu'à 30%",
+        "Économies d'énergie -30%",
         "Sécurité renforcée 24h/24",
-        "Valorisation de votre patrimoine",
-        "Contrôle à distance via smartphone"
+        "Valorisation patrimoine"
       ],
       
       exemples: [
-        "Maison 4 pièces à Vitré - Installation domotique complète",
-        "Villa Châteaubourg - Sécurité périmétrique et vidéosurveillance", 
-        "Résidence Liffré - Chauffage connecté et volets automatiques"
+        "Maison 4 pièces Vitré - Installation complète",
+        "Villa Châteaubourg - Sécurité périmétrique"
       ]
     },
 
