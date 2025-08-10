@@ -30,278 +30,292 @@ const Header = () => {
       'ia': Brain
     };
     const IconComponent = icons[serviceId] || Home;
-    return <IconComponent className="w-4 h-4" />;
+    return &lt;IconComponent className="w-4 h-4" /&gt;;
   };
 
   return (
-    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    &lt;header className="bg-white shadow-sm border-b sticky top-0 z-50"&gt;
+      &lt;div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;
+        &lt;div className="flex items-center justify-between h-16"&gt;
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">G</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-xl font-bold text-gray-900">Godeloup</span>
-              <span className="text-sm text-blue-600 block leading-none">Domotique</span>
-            </div>
-          </Link>
+          &lt;Link to="/" className="flex items-center space-x-2"&gt;
+            &lt;div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"&gt;
+              &lt;span className="text-white font-bold text-xl"&gt;G&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className="hidden sm:block"&gt;
+              &lt;span className="text-xl font-bold text-gray-900"&gt;Godeloup&lt;/span&gt;
+              &lt;span className="text-sm text-blue-600 block leading-none"&gt;Domotique&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/Link&gt;
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block">
-            <NavigationMenu>
-              <NavigationMenuList className="flex space-x-1">
-                <NavigationMenuLink asChild>
-                  <Link 
+          &lt;nav className="hidden md:block"&gt;
+            &lt;NavigationMenu&gt;
+              &lt;NavigationMenuList className="flex space-x-1"&gt;
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     Accueil
-                  </Link>
-                </NavigationMenuLink>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
 
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger 
+                &lt;NavigationMenuItem&gt;
+                  &lt;NavigationMenuTrigger 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     Nos Services
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-72 p-4">
-                      <div className="space-y-3">
-                        <Link
+                  &lt;/NavigationMenuTrigger&gt;
+                  &lt;NavigationMenuContent&gt;
+                    &lt;div className="w-72 p-4"&gt;
+                      &lt;div className="space-y-3"&gt;
+                        &lt;Link
                           to="/services"
                           className="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors"
-                        >
-                          <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <Monitor className="w-4 h-4 text-blue-600" />
-                          </div>
-                          <div>
-                            <div className="font-medium text-gray-900">Tous nos services</div>
-                            <div className="text-sm text-gray-500">Vue d'ensemble complète</div>
-                          </div>
-                        </Link>
-                        <Link
+                        &gt;
+                          &lt;div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"&gt;
+                            &lt;Monitor className="w-4 h-4 text-blue-600" /&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;
+                            &lt;div className="font-medium text-gray-900"&gt;Tous nos services&lt;/div&gt;
+                            &lt;div className="text-sm text-gray-500"&gt;Vue d'ensemble complète&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/Link&gt;
+                        &lt;Link
                           to="/robot-tondeuse"
                           className="flex items-center space-x-3 p-3 rounded-lg hover:bg-green-50 transition-colors"
-                        >
-                          <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
-                            <span className="text-green-600 text-lg">🤖</span>
-                          </div>
-                          <div>
-                            <div className="font-medium text-gray-900">Robot Tondeuse</div>
-                            <div className="text-sm text-gray-500">Entretien automatique pelouse</div>
-                          </div>
-                        </Link>
-                        <Link
+                        &gt;
+                          &lt;div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center"&gt;
+                            &lt;span className="text-green-600 text-lg"&gt;🤖&lt;/span&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;
+                            &lt;div className="font-medium text-gray-900"&gt;Robot Tondeuse&lt;/div&gt;
+                            &lt;div className="text-sm text-gray-500"&gt;Entretien automatique pelouse&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/Link&gt;
+                        &lt;Link
                           to="/services/domotique"
                           className="flex items-center space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-colors"
-                        >
-                          <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <Home className="w-4 h-4 text-blue-600" />
-                          </div>
-                          <div>
-                            <div className="font-medium text-gray-900">Domotique</div>
-                            <div className="text-sm text-gray-500">Maison connectée</div>
-                          </div>
-                        </Link>
-                        <Link
+                        &gt;
+                          &lt;div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center"&gt;
+                            &lt;Home className="w-4 h-4 text-blue-600" /&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;
+                            &lt;div className="font-medium text-gray-900"&gt;Domotique&lt;/div&gt;
+                            &lt;div className="text-sm text-gray-500"&gt;Maison connectée&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/Link&gt;
+                        &lt;Link
                           to="/services/securite"
                           className="flex items-center space-x-3 p-3 rounded-lg hover:bg-red-50 transition-colors"
-                        >
-                          <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
-                            <Shield className="w-4 h-4 text-red-600" />
-                          </div>
-                          <div>
-                            <div className="font-medium text-gray-900">Sécurité</div>
-                            <div className="text-sm text-gray-500">Alarmes & vidéosurveillance</div>
-                          </div>
-                        </Link>
-                      </div>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
+                        &gt;
+                          &lt;div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center"&gt;
+                            &lt;Shield className="w-4 h-4 text-red-600" /&gt;
+                          &lt;/div&gt;
+                          &lt;div&gt;
+                            &lt;div className="font-medium text-gray-900"&gt;Sécurité&lt;/div&gt;
+                            &lt;div className="text-sm text-gray-500"&gt;Alarmes &amp; vidéosurveillance&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/Link&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/NavigationMenuContent&gt;
+                &lt;/NavigationMenuItem&gt;
 
-                <NavigationMenuLink asChild>
-                  <Link 
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/zones-intervention" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     Zones d'intervention
-                  </Link>
-                </NavigationMenuLink>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
 
-                <NavigationMenuLink asChild>
-                  <Link 
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/topologies" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     Nos Solutions
-                  </Link>
-                </NavigationMenuLink>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
 
-                <NavigationMenuLink asChild>
-                  <Link 
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/boutique" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
-                    <ShoppingCart className="w-4 h-4 mr-1 inline" />
+                  &gt;
+                    &lt;ShoppingCart className="w-4 h-4 mr-1 inline" /&gt;
                     Boutique
-                  </Link>
-                </NavigationMenuLink>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
 
-                <NavigationMenuLink asChild>
-                  <Link 
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/about" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     À propos
-                  </Link>
-                </NavigationMenuLink>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
 
-                <NavigationMenuLink asChild>
-                  <Link 
+                &lt;NavigationMenuLink asChild&gt;
+                  &lt;Link 
                     to="/blog" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/blog') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  >
+                  &gt;
                     Blog
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </nav>
+                  &lt;/Link&gt;
+                &lt;/NavigationMenuLink&gt;
+              &lt;/NavigationMenuList&gt;
+            &lt;/NavigationMenu&gt;
+          &lt;/nav&gt;
 
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Phone className="w-4 h-4" />
-              <span>{mockData.contact.phone}</span>
-            </div>
-            <Button asChild>
-              <Link to="/contact">Devis gratuit</Link>
-            </Button>
-          </div>
+          {/* Contact Info &amp; CTA */}
+          &lt;div className="hidden lg:flex items-center space-x-4"&gt;
+            &lt;div className="flex items-center space-x-2 text-sm text-gray-600"&gt;
+              &lt;Phone className="w-4 h-4" /&gt;
+              &lt;span&gt;{mockData.contact.phone}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className="flex items-center space-x-2"&gt;
+              &lt;Button asChild&gt;
+                &lt;Link to="/devis-gratuit"&gt;Devis gratuit&lt;/Link&gt;
+              &lt;/Button&gt;
+              &lt;Button asChild variant="outline"&gt;
+                &lt;Link to="/visite-gratuite"&gt;Visite sur site&lt;/Link&gt;
+              &lt;/Button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          &lt;button
+            onClick={() =&gt; setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-      </div>
+          &gt;
+            {isMobileMenuOpen ? &lt;X className="w-6 h-6" /&gt; : &lt;Menu className="w-6 h-6" /&gt;}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
 
       {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto">
-            <Link
+      {isMobileMenuOpen &amp;&amp; (
+        &lt;div className="md:hidden bg-white border-t"&gt;
+          &lt;div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto"&gt;
+            &lt;Link
               to="/"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               Accueil
-            </Link>
+            &lt;/Link&gt;
 
             {/* Services Link */}
-            <Link
+            &lt;Link
               to="/services"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               Nos Services
-            </Link>
+            &lt;/Link&gt;
 
             {/* Zones d'intervention Link */}
-            <Link
+            &lt;Link
               to="/zones-intervention"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               Zones d'intervention
-            </Link>
+            &lt;/Link&gt;
 
             {/* Topologies Link */}
-            <Link
+            &lt;Link
               to="/topologies"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               Nos Solutions
-            </Link>
+            &lt;/Link&gt;
 
-            <Link
+            &lt;Link
               to="/boutique"
               className={`flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <ShoppingCart className="w-4 h-4 mr-2" />
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
+              &lt;ShoppingCart className="w-4 h-4 mr-2" /&gt;
               Boutique
-            </Link>
+            &lt;/Link&gt;
 
-            <Link
+            &lt;Link
               to="/about"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               À propos
-            </Link>
+            &lt;/Link&gt;
 
-            <Link
+            &lt;Link
               to="/blog"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/blog') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
+              onClick={() =&gt; setIsMobileMenuOpen(false)}
+            &gt;
               Blog
-            </Link>
+            &lt;/Link&gt;
 
-            <div className="pt-4 border-t">
-              <div className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600">
-                <Phone className="w-4 h-4" />
-                <span>{mockData.contact.phone}</span>
-              </div>
-              <Link
-                to="/contact"
-                className="block mx-3 mt-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Button className="w-full">Devis gratuit</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
+            &lt;div className="pt-4 border-t"&gt;
+              &lt;div className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600"&gt;
+                &lt;Phone className="w-4 h-4" /&gt;
+                &lt;span&gt;{mockData.contact.phone}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className="flex gap-2 mx-3 mt-2"&gt;
+                &lt;Link
+                  to="/devis-gratuit"
+                  className="flex-1"
+                  onClick={() =&gt; setIsMobileMenuOpen(false)}
+                &gt;
+                  &lt;Button className="w-full"&gt;Devis gratuit&lt;/Button&gt;
+                &lt;/Link&gt;
+                &lt;Link
+                  to="/visite-gratuite"
+                  className="flex-1"
+                  onClick={() =&gt; setIsMobileMenuOpen(false)}
+                &gt;
+                  &lt;Button variant="outline" className="w-full"&gt;Visite sur site&lt;/Button&gt;
+                &lt;/Link&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
       )}
-    </header>
+    &lt;/header&gt;
   );
 };
 

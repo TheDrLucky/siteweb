@@ -32,6 +32,11 @@ import ZonesInterventionPage from "./pages/ZonesInterventionPage";
 import BureauEtudesPage from "./pages/seo/BureauEtudesPage";
 import SolutionPage from "./pages/seo/SolutionPage";
 
+// New lead/visit pages
+import DevisPage from "./pages/DevisPage";
+import EtudePage from "./pages/EtudePage";
+import VisiteGratuitePage from "./pages/VisiteGratuitePage";
+
 function App() {
   return (
     <div className="App">
@@ -56,6 +61,11 @@ function App() {
             <Route path="/topologies/:topologyId" element={<TopologyDetailPage />} />
             <Route path="/zones-intervention" element={<ZonesInterventionPage />} />
             <Route path="/contact" element={<ContactPage />} />
+
+            {/* Pages Devis / Étude / Visite */}
+            <Route path="/devis-gratuit" element={<DevisPage />} />
+            <Route path="/etude-gratuite" element={<EtudePage />} />
+            <Route path="/visite-gratuite" element={<VisiteGratuitePage />} />
             
             {/* SEO Routes - Bureau d'études */}
             <Route path="/domotique/bureau-etudes-domotique" element={<BureauEtudesPage service="domotique" />} />
