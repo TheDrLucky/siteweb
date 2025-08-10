@@ -34,19 +34,19 @@ const Header = () => {
   };
 
   return (
-    &lt;header className="bg-white shadow-sm border-b sticky top-0 z-50"&gt;
-      &lt;div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;
-        &lt;div className="flex items-center justify-between h-16"&gt;
+    <header className="bg-white shadow-sm border-b sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          &lt;Link to="/" className="flex items-center space-x-2"&gt;
-            &lt;div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center"&gt;
-              &lt;span className="text-white font-bold text-xl"&gt;G&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div className="hidden sm:block"&gt;
-              &lt;span className="text-xl font-bold text-gray-900"&gt;Godeloup&lt;/span&gt;
-              &lt;span className="text-sm text-blue-600 block leading-none"&gt;Domotique&lt;/span&gt;
-            &lt;/div&gt;
-          &lt;/Link&gt;
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">G</span>
+            </div>
+            <div className="hidden sm:block">
+              <span className="text-xl font-bold text-gray-900">Godeloup</span>
+              <span className="text-sm text-blue-600 block leading-none">Domotique</span>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           &lt;nav className="hidden md:block"&gt;
