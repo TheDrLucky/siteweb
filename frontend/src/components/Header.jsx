@@ -30,7 +30,7 @@ const Header = () => {
       'ia': Brain
     };
     const IconComponent = icons[serviceId] || Home;
-    return &lt;IconComponent className="w-4 h-4" /&gt;;
+    return <IconComponent className="w-4 h-4" />;
   };
 
   return (
