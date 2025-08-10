@@ -57,7 +57,7 @@ const HomePage = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="px-8 py-3">
-                <Link to="/contact">
+                <Link to="/devis-gratuit">
                   <Phone className="w-5 h-5 mr-2" />
                   {mockData.hero.ctaPrimary}
                 </Link>
