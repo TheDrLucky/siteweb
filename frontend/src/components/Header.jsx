@@ -186,31 +186,31 @@ const Header = () => {
             </NavigationMenu>
           </nav>
 
-          {/* Contact Info &amp; CTA */}
-          &lt;div className="hidden lg:flex items-center space-x-4"&gt;
-            &lt;div className="flex items-center space-x-2 text-sm text-gray-600"&gt;
-              &lt;Phone className="w-4 h-4" /&gt;
-              &lt;span&gt;{mockData.contact.phone}&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div className="flex items-center space-x-2"&gt;
-              &lt;Button asChild&gt;
-                &lt;Link to="/devis-gratuit"&gt;Devis gratuit&lt;/Link&gt;
-              &lt;/Button&gt;
-              &lt;Button asChild variant="outline"&gt;
-                &lt;Link to="/visite-gratuite"&gt;Visite sur site&lt;/Link&gt;
-              &lt;/Button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
+          {/* Contact Info & CTA */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex items-center space-x-2 text-sm text-gray-600">
+              <Phone className="w-4 h-4" />
+              <span>{mockData.contact.phone}</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button asChild>
+                <Link to="/devis-gratuit">Devis gratuit</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/visite-gratuite">Visite sur site</Link>
+              </Button>
+            </div>
+          </div>
 
           {/* Mobile menu button */}
-          &lt;button
-            onClick={() =&gt; setIsMobileMenuOpen(!isMobileMenuOpen)}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-blue-50"
-          &gt;
-            {isMobileMenuOpen ? &lt;X className="w-6 h-6" /&gt; : &lt;Menu className="w-6 h-6" /&gt;}
-          &lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </div>
 
       {/* Mobile menu */}
       {isMobileMenuOpen &amp;&amp; (
