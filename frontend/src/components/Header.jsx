@@ -127,64 +127,64 @@ const Header = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                &lt;NavigationMenuLink asChild&gt;
-                  &lt;Link 
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/zones-intervention" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  &gt;
+                  >
                     Zones d'intervention
-                  &lt;/Link&gt;
-                &lt;/NavigationMenuLink&gt;
+                  </Link>
+                </NavigationMenuLink>
 
-                &lt;NavigationMenuLink asChild&gt;
-                  &lt;Link 
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/topologies" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  &gt;
+                  >
                     Nos Solutions
-                  &lt;/Link&gt;
-                &lt;/NavigationMenuLink&gt;
+                  </Link>
+                </NavigationMenuLink>
 
-                &lt;NavigationMenuLink asChild&gt;
-                  &lt;Link 
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/boutique" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  &gt;
-                    &lt;ShoppingCart className="w-4 h-4 mr-1 inline" /&gt;
+                  >
+                    <ShoppingCart className="w-4 h-4 mr-1 inline" />
                     Boutique
-                  &lt;/Link&gt;
-                &lt;/NavigationMenuLink&gt;
+                  </Link>
+                </NavigationMenuLink>
 
-                &lt;NavigationMenuLink asChild&gt;
-                  &lt;Link 
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/about" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  &gt;
+                  >
                     À propos
-                  &lt;/Link&gt;
-                &lt;/NavigationMenuLink&gt;
+                  </Link>
+                </NavigationMenuLink>
 
-                &lt;NavigationMenuLink asChild&gt;
-                  &lt;Link 
+                <NavigationMenuLink asChild>
+                  <Link 
                     to="/blog" 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover:text-blue-600 hover:bg-blue-50 ${
                       isActive('/blog') ? 'text-blue-600 bg-blue-50' : 'text-gray-700'
                     }`}
-                  &gt;
+                  >
                     Blog
-                  &lt;/Link&gt;
-                &lt;/NavigationMenuLink&gt;
-              &lt;/NavigationMenuList&gt;
-            &lt;/NavigationMenu&gt;
-          &lt;/nav&gt;
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </nav>
 
           {/* Contact Info &amp; CTA */}
           &lt;div className="hidden lg:flex items-center space-x-4"&gt;
