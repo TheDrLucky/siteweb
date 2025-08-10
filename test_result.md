@@ -351,6 +351,21 @@ frontend:
         agent: "testing"
         comment: "✅ RE-TESTÉ ET CONFIRMÉ FONCTIONNEL: Bloc boutique spécifique par catégorie intégré dans pages solutions avec proposition directe des services et prix."
 
+  - task: "Création pages Devis/Étude/Visite et mise à jour navigation"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/DevisPage.jsx, /app/frontend/src/pages/EtudePage.jsx, /app/frontend/src/pages/VisiteGratuitePage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Création des nouvelles pages frontend pour génération de leads: DevisPage (/devis-gratuit), EtudePage (/etude-gratuite), VisiteGratuitePage (/visite-gratuite). Mise à jour navigation Header et CTAs HomePage pour rediriger vers ces nouvelles pages au lieu de /contact. Intégration iframe Odoo pour prise de rendez-vous."
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTÉ ET FONCTIONNEL: Nouvelles pages Devis/Étude/Visite créées avec succès. Routes /devis-gratuit, /etude-gratuite, /visite-gratuite toutes accessibles (HTTP 200). Navigation Header mise à jour: boutons 'Devis gratuit' et 'Visite sur site' redirigent correctement vers les nouvelles pages. CTAs HomePage corrigés. Iframe Odoo accessible (https://www.godeloupdomotique.ovh/appointment/13 → HTTP 200). Backend stable (4/5 tests passés). Toutes les nouvelles pages de génération de leads sont opérationnelles."
+
 backend:
   - task: "Structure backend existante"
     implemented: true
