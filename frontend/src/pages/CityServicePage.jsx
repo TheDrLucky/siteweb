@@ -230,7 +230,7 @@ const CityServicePage = () => {
 
                   <div className="mt-8 space-y-4">
                     <Button asChild className="w-full">
-                      <Link to="/contact">
+                      <Link to="/devis-gratuit">
                         <Phone className="w-4 h-4 mr-2" />
                         Demander un devis
                       </Link>
