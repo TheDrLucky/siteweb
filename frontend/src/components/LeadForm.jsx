@@ -269,7 +269,7 @@ const LeadForm = ({ variant = 'devis' }) => {
               <Input id="email" name="email" type="email" value={data.email} onChange={handleChange} required className="mt-2" />
             </div>
             <div>
-              <Label htmlFor="phone">Téléphone *</nLabel>
+              <Label htmlFor="phone">Téléphone *</Label>
               <Input id="phone" name="phone" type="tel" value={data.phone} onChange={handleChange} required className="mt-2" />
             </div>
             <div className="md:col-span-2">
