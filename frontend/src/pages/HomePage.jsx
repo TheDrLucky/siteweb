@@ -221,7 +221,7 @@ const HomePage = () => {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50">
-                  <Link to="/contact">
+                  <Link to="/devis-gratuit">
                     Devis gratuit
                   </Link>
                 </Button>
