@@ -213,109 +213,109 @@ const Header = () => {
       </div>
 
       {/* Mobile menu */}
-      {isMobileMenuOpen &amp;&amp; (
-        &lt;div className="md:hidden bg-white border-t"&gt;
-          &lt;div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto"&gt;
-            &lt;Link
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white border-t">
+          <div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto">
+            <Link
               to="/"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Accueil
-            &lt;/Link&gt;
+            </Link>
 
             {/* Services Link */}
-            &lt;Link
+            <Link
               to="/services"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/services') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Nos Services
-            &lt;/Link&gt;
+            </Link>
 
             {/* Zones d'intervention Link */}
-            &lt;Link
+            <Link
               to="/zones-intervention"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/zones-intervention') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Zones d'intervention
-            &lt;/Link&gt;
+            </Link>
 
             {/* Topologies Link */}
-            &lt;Link
+            <Link
               to="/topologies"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/topologies') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Nos Solutions
-            &lt;/Link&gt;
+            </Link>
 
-            &lt;Link
+            <Link
               to="/boutique"
               className={`flex items-center px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/boutique') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
-              &lt;ShoppingCart className="w-4 h-4 mr-2" /&gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <ShoppingCart className="w-4 h-4 mr-2" />
               Boutique
-            &lt;/Link&gt;
+            </Link>
 
-            &lt;Link
+            <Link
               to="/about"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/about') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               À propos
-            &lt;/Link&gt;
+            </Link>
 
-            &lt;Link
+            <Link
               to="/blog"
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                 isActive('/blog') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
               }`}
-              onClick={() =&gt; setIsMobileMenuOpen(false)}
-            &gt;
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Blog
-            &lt;/Link&gt;
+            </Link>
 
-            &lt;div className="pt-4 border-t"&gt;
-              &lt;div className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600"&gt;
-                &lt;Phone className="w-4 h-4" /&gt;
-                &lt;span&gt;{mockData.contact.phone}&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div className="flex gap-2 mx-3 mt-2"&gt;
-                &lt;Link
+            <div className="pt-4 border-t">
+              <div className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600">
+                <Phone className="w-4 h-4" />
+                <span>{mockData.contact.phone}</span>
+              </div>
+              <div className="flex gap-2 mx-3 mt-2">
+                <Link
                   to="/devis-gratuit"
                   className="flex-1"
-                  onClick={() =&gt; setIsMobileMenuOpen(false)}
-                &gt;
-                  &lt;Button className="w-full"&gt;Devis gratuit&lt;/Button&gt;
-                &lt;/Link&gt;
-                &lt;Link
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Button className="w-full">Devis gratuit</Button>
+                </Link>
+                <Link
                   to="/visite-gratuite"
                   className="flex-1"
-                  onClick={() =&gt; setIsMobileMenuOpen(false)}
-                &gt;
-                  &lt;Button variant="outline" className="w-full"&gt;Visite sur site&lt;/Button&gt;
-                &lt;/Link&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Button variant="outline" className="w-full">Visite sur site</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
-    &lt;/header&gt;
+    </header>
   );
 };
 
